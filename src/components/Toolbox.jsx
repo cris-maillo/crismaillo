@@ -1,0 +1,159 @@
+import React from 'react';
+import './../index.css';
+
+
+function Toolbox() {
+  return (
+    <div>
+      <div class="toolboxContainer">
+        <p>this is a semi-current collection of writing, videos, websites, places, 
+            and things that I appreciate, get inspired by, make use of, and think about on a 
+            semi-regular basis. i’m always looking for new inspiration to fuel my rabbit holes, 
+            so if you ever come across something you think i’d enjoy, <u><a href="mailto:cristinamaillo.r@gmail.com">please share</a></u>!</p>
+        
+        <div class="resourcesGrid">
+            <div class="theme">
+                <div class="themeName">
+                    <h3>Exploring</h3>
+                </div>
+                <div class="themeSubname">
+                    <p><b>Digital Spaces</b></p>
+                    <div class="resource">
+                        <p><a href="https://www.tomasmaillo.com/" target="_blank">tomasmaillo.com</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://www.are.na/" target="_blank">are.na</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://sundaysites.cafe/" target="_blank">Sunday Sites</a></p>
+                    </div>
+                </div>
+                <div class="themeSubname">
+                    <p><b>Physical Spaces</b></p>
+                    <div class="resource">
+                        <p><a href="https://www.barbican.org.uk//" target="_blank">the Barbican</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://goo.gl/maps/Af39zzksNfxmQWFs9" target="_blank">London</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://goo.gl/maps/QxAbGkSdYBJ31NZL8" target="_blank">Berlin</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme">
+                <div class="themeName">
+                    <h3>Reading</h3>
+                </div>
+                <div class="themeSubname">
+                    <p><b>Newsletters</b></p>
+                    <div class="resource">
+                        <p><a href="https://news.lettersofnote.com/" target="_blank">Letters of Note</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://www.densediscovery.com/" target="_blank">Dense Discovery</a></p>
+                    </div>
+                </div>
+                <div class="themeSubname">
+                    <p><b>Books</b></p>
+                    <div class="resource">
+                        <p><a href="https://en.wikipedia.org/wiki/Crying_in_H_Mart" target="_blank">Crying in H Mart</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://en.wikipedia.org/wiki/Severance_(novel)" target="_blank">Severance</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://en.wikipedia.org/wiki/The_Idiot_(Batuman_novel)" target="_blank">the Idiot</a></p>
+                    </div>
+                </div>
+                <div class="themeSubname">
+                    <p><b>Articles + Blogs</b></p>
+                    <div class="resource">
+                        <p><a href="https://usesthis.com/" target="_blank">Uses This</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://www.reddit.com/r/MoneyDiariesACTIVE/" target="_blank">Money Diaries</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://www.eugenewei.com/blog/2019/2/19/status-as-a-service" target="_blank">Status as a Service</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme">
+                <div class="themeName">
+                    <h3>Using</h3>
+                </div>
+                <div class="themeSubname">
+                    <p><b></b></p>
+                    <div class="resource">
+                        <p><a href="https://www.raycast.com/" target="_blank">Raycast</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://futureland.tv/home" target="_blank">Futureland</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://starship.rs/" target="_blank">Starship.rs</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme">
+                <div class="themeName">
+                    <h3>Watching</h3>
+                </div>
+                <div class="themeSubname">
+                    <p><b>YouTube</b></p>
+                    <div class="resource">
+                        <p><a href="https://youtu.be/-GWItHgAfPA" target="_blank">Chef's Night Out</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://youtu.be/rKo8Sv99MkM" target="_blank">Skid Row, Explained</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://youtu.be/OQqeTB2tK-A" target="_blank">Mystery Menu</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme">
+                <div class="themeName">
+                    <h3>Cooking</h3>
+                </div>
+                <div class="themeSubname">
+                    <p><b>What</b></p>
+                    <div class="resource">
+                        <p><a href="./articles/okonomiyaki.html">Okonomiyaki</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://www.epicurious.com/recipes/food/views/our-favorite-lasagna-with-sausage-spinach-and-three-cheeses-51253440" target="_blank">Best Lasagna</a></p>
+                    </div>
+                </div>
+                <div class="themeSubname">
+                    <p><b>With</b></p>
+                    <div class="resource">
+                        <p><a href="https://www.boroughkitchen.com/products/silapmos-saute-casserole-with-lid-26cm-4-3l" target="_blank">Stainless Steel Sauté</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://www.boroughkitchen.com/products/triangle-slotted-flexible-turner" target="_blank">Turning Spatula</a></p>
+                    </div>
+                    <div class="resource">
+                        <p><a href="https://www.souschef.co.uk/products/yukihira-saucepan-16cm" target="_blank">Yukihira Saucepan</a></p>
+                    </div>
+                </div>
+                <div class="themeSubname">
+                    <p><b>For</b></p>
+                    <div class="resource">
+                        <p>People I love</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Toolbox;
