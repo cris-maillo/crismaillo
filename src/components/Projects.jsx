@@ -16,7 +16,7 @@ function Projects() {
             <div class="projectName">
               <h3>The Odin Project</h3>
             </div>
-            <div class="projectDescription" style="padding-bottom: 40px;">
+            <div class="projectDescription" style="paddingBottom: 40px;">
                 <p>For the past year I have been following <a href="https://www.theodinproject.com/" target="_blank">The Odin Project's</a> course for Full Stack Development.
                 I've done various of their practical assigments and can be seen on <a href="https://github.com/stars/cris-maillo/lists/the-odin-project" target="_blank">GitHub</a>.</p>
             </div>
