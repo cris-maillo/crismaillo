@@ -1,21 +1,38 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css'
-import LandingPage from './components/LandingPage';
+
 import Background from './components/Background';
 import Banner from './components/Banner';
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import LandingPage from './components/LandingPage';
+import AboutMe from './components/AboutMe';
+import Film from './components/Film';
+import Projects from './components/Projects';
+import Text from './components/Text';
+import Toolbox from './components/Toolbox';
+
+
 function App() {
   return (
-    <div>
+    <Router>
       <Background/>
       <Banner/>
       <Header/>
       <NavBar/>
-      <LandingPage/>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/film" element={<Film />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/text" element={<Text />} />
+          <Route path="/toolbox" element={<Toolbox />} />
+        </Routes>
       <Footer/>
-    </div>
+    </Router>
   );
 }
 

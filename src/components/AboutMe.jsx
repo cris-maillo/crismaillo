@@ -14,7 +14,7 @@ function AboutMe() {
         <img class="profilePic tooltip" alt="dark matter expo, Berlin" src="imgs/profile.jpeg"/>
         <img class="profileMobile" alt="dark matter expo, Berlin" src="imgs/profileMobile.png"/>
         <div class="aboutText">
-            <p class="me">Hey, I’m Cris (she/her). I’m a London-based, <span class="textHover tooltip" alt="Asturias, Northern Spain" style="cursor: help">Oviedo</span>-born 23-year-old. I 
+            <p class="me">Hey, I’m Cris (she/her). I’m a London-based, <span class="textHover tooltip" alt="Asturias, Northern Spain" style={{cursor: 'help'}}>Oviedo</span>-born 23-year-old. I 
                 tend to avoid any definitions of who I am as I personally believe that life and the act of being 
                 are ever-changing and <span class="image-wrapper textHover">usually too ambigious<img class="image" src="imgs/yoko.png"/> to ever be fully truthful.</span></p>
             <p class="values">I <wbr/>believe in the value of commu<wbr/>nity and avoid being a hypocr<wbr/>ite above all else.</p>
@@ -27,11 +27,11 @@ function AboutMe() {
                     <p><a href="https://github.com/cris-maillo" target="_blank">GitHub</a></p>
                     <p><a href="/imgs/CristinaMaillo2022.pdf" target="_blank">Résumé</a></p>
                     <p><a href="https://www.linkedin.com/in/cristina-maillo/" target="_blank">LinkedIn</a></p>
-                    <p onclick="emailToClipboard()" alt="Click to copy to Clipboard" class="tooltip" style="cursor: pointer">cristinamaillo.r@gmail.com</p>
+                    <p onclick="emailToClipboard()" alt="Click to copy to Clipboard" class="tooltip" style={{cursor: 'pointer'}}>cristinamaillo.r@gmail.com</p>
                 </div>
             </div>
             <div class="colophon">
-                <p style="padding-bottom: 10px"><b>about this site</b></p>
+                <p style={{paddingBottom: '10px'}}><b>about this site</b></p>
                 <p>I created this website inspired by a mixture of slow-web / learning in public / digital garden 
                     discourse. I believe that having a public, creative, and if possible, self-made, space to 
                     share and introduce yourself online can be somehow restorative.<br/>
@@ -45,7 +45,7 @@ function AboutMe() {
     </div>
 
     <div class="colophonMobile">
-      <p style="padding-bottom: 10px"><b>about this site</b></p>
+      <p style={{paddingBottom: '10px'}}><b>about this site</b></p>
       <p>I created this website inspired by a mixture of slow-web / learning in public / digital garden 
       discourse. I believe that having a public, creative, and if possible, self-made, space to 
       share and introduce yourself online can be somehow restorative.<br/><br/>
