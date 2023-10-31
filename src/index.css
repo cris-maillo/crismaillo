@@ -1,24 +1,24 @@
-/* @font-face {
+@font-face {
   font-family: HKGrotesk-Medium;
-  src: url(./HKGrotesk-Medium.woff);
+  src: url(./assets/fonts/HKGrotesk-Medium.woff) format('woff');
 }
 
 @font-face {
   font-family: HKGrotesk-ExtraLight;
-  src: url(./HKGrotesk-ExtraLight.woff);
+  src: url(./assets/fonts/HKGrotesk-ExtraLight.woff) format('woff');
 }
 
 @font-face {
   font-family: HKGrotesk-Light;
-  src: url(./HKGrotesk-Light.ttf);
-} */
+  src: url(./assets/fonts/HKGrotesk-Light.ttf) format('truetype');
+}
 
 body,html {
   overflow: hidden;
   position: relative;
   height: 100%;
   min-height: 100%;
-  /* font-family: HKGrotesk-ExtraLight; */
+  font-family: HKGrotesk-ExtraLight;
   line-height: 1.5;
 }
 
@@ -54,7 +54,7 @@ body{
   --yellow-filter: invert(85%) sepia(56%) saturate(2764%) hue-rotate(360deg) brightness(102%) contrast(107%);
   --ellipse-filter: none;
   --smiley-filter: none;
-  /* --navImage: url(../imgs/tinyblur.svg); */
+  --navImage: url(./assets/images/tinyblur.svg)
   --background-color: #BBFF9B;
 }
 
@@ -247,7 +247,7 @@ hr {
 }
 
 .navbar a:hover, .navbar .active {
-  /* background-image: var(--navImage, url(../imgs/tinyblurPink.svg)); */
+  background-image: var(--navImage, url(./assets/images/tinyblurPink.svg));
   background-size: 35px 35px;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,0 +1,12 @@
+DONE:
+- [X] Brought in content (text and imgs) from OG web
+- [X] Separated pages and components into components
+
+- [X] bring in font
+- [ ] restructure css
+- [ ] use react-router-dom to render content based on navbar
+- [X] bring in functionality to move banner
+- [ ] change HTML to React
+- [ ] bring in images to all pages in React structure
+- [ ] Google Analytics tag
+- [ ] Refract text content to be based on Objects + components
