@@ -17,9 +17,9 @@ function Article() {
         <div class="textContainer article">
             <div className="articleText">
             <p>I have a slight obsession with Okonomiyaki. In my opinion, it is a better omelette version compared to my own country (Tortilla Española), as it has more veg, uses way <i>way</i> less oil than the Spanish version, and slathering it in Kewpie mayo is not only not frowned upon but encouraged. 
-                I have only tried it once from an actual Hiroshiman chef (<a href="https://www.pelliclemag.com/home/2021/3/8/fumio-tanga-bridging-the-izakaya-pub-divide-shofoodoh" target="_blank">this article about him is a nice read</a>), however, I “cook” it religiously at home. 
+                I have only tried it once from an actual Hiroshiman chef (<a href="https://www.pelliclemag.com/home/2021/3/8/fumio-tanga-bridging-the-izakaya-pub-divide-shofoodoh" target="_blank" rel="noreferrer">this article about him is a nice read</a>), however, I “cook” it religiously at home. 
                 <br/><br/>You might have noticed the quotation marks around “cook” and this is because I won’t shy away from 
-                admitting that I have taken extreme liberties on the original recipe that I first looked at (<a href="https://www.justonecookbook.com/okonomiyaki/" target="_blank">Just One Cookbook</a>). Some ingredients I tend 
+                admitting that I have taken extreme liberties on the original recipe that I first looked at (<a href="https://www.justonecookbook.com/okonomiyaki/" target="_blank" rel="noreferrer">Just One Cookbook</a>). Some ingredients I tend 
                 to omit or replace just because they are a bit harder to find in London and others I skip as I prefer not to buy perishable ingredients that aren’t used entirely in a recipe.
                 <br/>I am at peace with my modifications and I definitely will not claim authenticity of my recipe especially because (according to Wikipedia), 
                 the name is derived from the word okonomi, meaning "how you like" or "what you like" and this is, no doubt, what I like.<br/><br/>

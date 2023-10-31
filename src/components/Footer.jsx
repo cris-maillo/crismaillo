@@ -7,9 +7,9 @@ function Footer() {
       <footer>
         <h6>
           <span className="hide">
-            <a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank">leave a message</a>
+            <a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank" rel="noreferrer">leave a message</a>
             <span className="lines"></span>
-            <a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank">@crismaillo</a>
+            <a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank" rel="noreferrer">@crismaillo</a>
             <span className="lines"></span>
             <span className="lines"></span>
             <span className="lines"></span>

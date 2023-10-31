@@ -25,7 +25,7 @@ function Film() {
       </div>
 
       <footer class="disappearFooter">
-      <h6><span class="hide"><a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank">leave a message</a> <span class="lines"></span> <a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank">@crismaillo</a> <span class="lines"></span><span class="lines"></span> // <span class="lines"></span></span><span class="lines"></span> <span  class="theme-name">dark mode</span> <span class="lines"></span></h6>
+      <h6><span class="hide"><a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank" rel="noreferrer">leave a message</a> <span class="lines"></span> <a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank" rel="noreferrer">@crismaillo</a> <span class="lines"></span><span class="lines"></span> // <span class="lines"></span></span><span class="lines"></span> <span  class="theme-name">dark mode</span> <span class="lines"></span></h6>
       </footer>
     </div>
   );
