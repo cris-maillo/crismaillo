@@ -14,7 +14,7 @@ function Article() {
             </div>
         </div>
 
-        <div class="textContainer article">
+        <div className="textContainer article">
             <div className="articleText">
             <p>I have a slight obsession with Okonomiyaki. In my opinion, it is a better omelette version compared to my own country (Tortilla Española), as it has more veg, uses way <i>way</i> less oil than the Spanish version, and slathering it in Kewpie mayo is not only not frowned upon but encouraged. 
                 I have only tried it once from an actual Hiroshiman chef (<a href="https://www.pelliclemag.com/home/2021/3/8/fumio-tanga-bridging-the-izakaya-pub-divide-shofoodoh" target="_blank" rel="noreferrer">this article about him is a nice read</a>), however, I “cook” it religiously at home. 

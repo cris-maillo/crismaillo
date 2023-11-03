@@ -16,7 +16,7 @@ function Text() {
           <div className="tag">surfing (the web)</div>
         </div>
       </div>
-      <div class="textContainer">
+      <div className="textContainer">
         <div className="articleContainer" data-theme="cooking"><a href="articles/okonomiyaki.html">
             <div className="articleTitle">
                 <h3>Okonomiyaki</h3>

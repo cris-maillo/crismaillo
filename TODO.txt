@@ -1,11 +1,5 @@
-DONE:
-- [X] Brought in content (text and imgs) from OG web
-- [X] Separated pages and components into components
-
-- [X] bring in font
+TO DO:
 - [ ] restructure css
-- [X] use react-router-dom to render content based on navbar
-- [X] bring in functionality to move banner
 - [ ] bring in images to all pages in React structure
     - [X] Landing Page 
     - [X] About Me
@@ -13,4 +7,15 @@ DONE:
     - [X] Projects
 - [ ] Google Analytics tag
 - [ ] Refract text content to be based on Objects + components
-- [ ] Dark mode setting
+- [ ] Film js file drag and drop
+- [ ] CSAP Animation
+- [ ] Re-do CO2 / website info
+
+
+DONE:
+- [X] Brought in content (text and imgs) from OG web
+- [X] Separated pages and components into components
+- [X] Dark mode setting
+- [X] bring in font
+- [X] use react-router-dom to render content based on navbar
+- [X] bring in functionality to move banner
