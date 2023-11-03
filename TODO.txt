@@ -6,11 +6,11 @@ DONE:
 - [ ] restructure css
 - [X] use react-router-dom to render content based on navbar
 - [X] bring in functionality to move banner
-- [ ] change HTML to React
 - [ ] bring in images to all pages in React structure
     - [X] Landing Page 
     - [X] About Me
     - [ ] Film
-    - [ ] Projects
+    - [X] Projects
 - [ ] Google Analytics tag
 - [ ] Refract text content to be based on Objects + components
+- [ ] Dark mode setting

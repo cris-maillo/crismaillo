@@ -1,5 +1,7 @@
 import React from 'react';
 import './../index.css';
+import fittr from '../assets/images/fittr.png';
+import yogAI from '../assets/images/yogAI.png';
 
 
 function Projects() {
@@ -35,7 +37,7 @@ function Projects() {
                 <h5>2021</h5>
             </div>
             <div class="projectImg">
-                <img src="imgs/fittr.png"/>
+                <img src={fittr} alt="screenshot of fittr app's landing page"/>
             </div>
             <div class="projectName">
                 <h3>Fittr.AI</h3>
@@ -52,7 +54,7 @@ function Projects() {
                 <h5>2020</h5>
             </div>
             <div class="projectImg">
-                <img src="imgs/yogAI.png"/>
+                <img src={yogAI} alt="screenshot of yogAI's landing page"/>
             </div>
             <div class="projectName">
                 <h3>YogAI</h3>

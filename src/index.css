@@ -54,7 +54,7 @@ body{
   --yellow-filter: invert(85%) sepia(56%) saturate(2764%) hue-rotate(360deg) brightness(102%) contrast(107%);
   --ellipse-filter: none;
   --smiley-filter: none;
-  --navImage: url(./assets/images/tinyblur.svg)
+  --navImage: url(./assets/images/tinyblur.svg);
   --background-color: #BBFF9B;
 }
 

@@ -6,6 +6,7 @@ function Toolbox() {
   return (
     <div>
       <div class="toolboxContainer">
+        <h2>Toolbox</h2>
         <p>this is a semi-current collection of writing, videos, websites, places, 
             and things that I appreciate, get inspired by, make use of, and think about on a 
             semi-regular basis. i’m always looking for new inspiration to fuel my rabbit holes, 

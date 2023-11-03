@@ -16,7 +16,7 @@ function LandingPage() {
           <span>internet</span>
         </span>. 
         An experimental &amp; ever-changing (verging on self-absorbed) space to share{" "}
-        <Link to="/about">who I am</Link>, 
+        <Link to="/about">who I am</Link>,{" "}  
         <Link to="/projects">what I've done</Link>, 
         what I’m doing now,{" "}
         <Link to="/toolbox">what I like</Link>, 
