@@ -3,27 +3,21 @@ import './../index.css';
 
 function Footer() {
 
-  const [isLightMode, setIsLightMode] = useState(document.body.classList.contains('light'));
+  const [isLightMode, setIsLightMode] = useState(() => {
+    const storedTheme = localStorage.getItem('theme');
+    return storedTheme === 'light';
+  });
 
   const toggleMode = () => {
-    if (isLightMode) {
-      document.body.classList.remove('light');
-      localStorage.setItem('theme', 'dark');
-      setIsLightMode(false);
-    } else {
-      document.body.classList.add('light');
-      localStorage.setItem('theme', 'light');
-      setIsLightMode(true);
-    }
+    const newTheme = isLightMode ? 'dark' : 'light';
+    localStorage.setItem('theme', newTheme);
+    setIsLightMode(!isLightMode);
   };
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'light') {
+    if(isLightMode){
       document.body.classList.add('light');
-      setIsLightMode(true);
-    } else {
-      setIsLightMode(false);
+    }else{
       document.body.classList.remove('light');
     }
   }, [isLightMode]);
@@ -38,7 +32,7 @@ function Footer() {
             <span className="lines"></span>
             <span className="lines"></span>
             <span className="lines"></span>
-            <span className="theme-name" onClick={() => toggleMode()}>
+            <span className="theme-name" onClick={toggleMode}>
               {isLightMode ? 'dark mode' : 'light mode'}
             </span>
             <span className="lines"></span>
