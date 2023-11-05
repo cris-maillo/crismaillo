@@ -9,6 +9,7 @@ import IMG0439 from '../assets/images/film/img_0439.jpeg';
 import IMG6552 from '../assets/images/film/IMG_6552.jpeg';
 import IMG7396 from '../assets/images/film/IMG_7396.jpeg';
 import IMG7417 from '../assets/images/film/IMG_7417.jpeg';
+import Tippy from '@tippyjs/react';
 
 const imageArray = [
   {
@@ -118,27 +119,11 @@ function Film() {
       
       <div className="filmPictures" id="filmPictures" onMouseDown={handleMouseDown}>
         {imageArray.map((image) => (
-          <img key={image.id} id={image.id} className="draggable tooltip" alt={image.alt} src={image.src} />
+          <Tippy className='tippy' content={image.alt} key={image.id}>
+            <img key={image.id} id={image.id} className="draggable" alt={image.alt} src={image.src} />
+          </Tippy>
         ))}
       </div>
-
-      {/* <footer className="disappearFooter">
-        <h6>
-          <span className="hide">
-            <a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank" rel="noreferrer">
-              leave a message
-            </a>{' '}
-            <span className="lines"></span>{' '}
-            <a href="https://www.yourworldoftext.com/~crismaillo/" target="_blank" rel="noreferrer">
-              @crismaillo
-            </a>{' '}
-            <span className="lines"></span>
-            <span className="lines"></span> // <span className="lines"></span>
-          </span>
-          <span className="lines"></span>{' '}
-          <span className="theme-name">dark mode</span> <span className="lines"></span>
-        </h6>
-      </footer> */}
     </div>
   );
 }

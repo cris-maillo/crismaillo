@@ -3,6 +3,7 @@ import './../index.css';
 import profilePic from '../assets/images/profile.jpeg';
 import profilePicM from '../assets/images/profileMobile.png';
 import who from '../assets/images/yoko.png';
+import Tippy from '@tippyjs/react';
 
 
 function AboutMe() {
@@ -18,11 +19,15 @@ function AboutMe() {
       </div>
 
     <div className="aboutMecontent">
-        <img className="profilePic tooltip" alt="dark matter expo, Berlin" src={profilePic}/>
+      <Tippy content="dark matter expo, Berlin" className='tippy'>
+        <img className="profilePic" alt="dark matter expo, Berlin" src={profilePic}/>
+      </Tippy>
         <img className="profileMobile" alt="dark matter expo, Berlin" src={profilePicM}/>
         <div className="aboutText">
-            <p className="me">Hey, I’m Cris (she/her). I’m a London-based, <span className="textHover tooltip" alt="Asturias, Northern Spain" style={{cursor: 'help'}}>Oviedo</span>-born 23-year-old. I 
-                tend to avoid any definitions of who I am as I personally believe that life and the act of being 
+            <p className="me">Hey, I’m Cris (she/her). I’m a London-based,{" "}
+            <Tippy content="Asturias, Northern Spain" className='tippy'>
+              <span className="textHover" alt="Asturias, Northern Spain" style={{cursor: 'help'}}>Oviedo</span>
+            </Tippy>-born 23-year-old. I tend to avoid any definitions of who I am as I personally believe that life and the act of being 
                 are ever-changing and <span className="image-wrapper textHover">usually too ambigious<img className="image" src={who} alt="yoko ono not knowing who she is"/> to ever be fully truthful.</span></p>
             <p className="values">I <wbr/>believe in the value of commu<wbr/>nity and avoid being a hypocr<wbr/>ite above all else.</p>
             <div className="doing">
@@ -34,7 +39,9 @@ function AboutMe() {
                     <p><a href="https://github.com/cris-maillo" target="_blank" rel="noreferrer">GitHub</a></p>
                     <p><a href="/imgs/CristinaMaillo2022.pdf" target="_blank" rel="noreferrer">Résumé</a></p>
                     <p><a href="https://www.linkedin.com/in/cristina-maillo/" target="_blank" rel="noreferrer">LinkedIn</a></p>
-                    <p onClick={emailToClipboard} alt="Click to copy to Clipboard" className="tooltip" style={{cursor: 'pointer'}}>cristinamaillo.r@gmail.com</p>
+                    <Tippy content="Click to copy to Clipboard" className='tippy'>
+                      <p onClick={emailToClipboard} alt="Click to copy to Clipboard" style={{cursor: 'pointer'}}>cristinamaillo.r@gmail.com</p>
+                    </Tippy>
                 </div>
             </div>
             <div className="colophon">

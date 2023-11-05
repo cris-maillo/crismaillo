@@ -893,7 +893,7 @@ span .lines{
   }
 }
 
-.tippy-box[data-theme~='tippy-cris'] {
+.tippy {
   background-color: transparent;
   color: var(--text-color, white);
   font-size: 12px;

@@ -3,11 +3,13 @@ TO DO:
 - [ ] Google Analytics tag
 - [ ] Refract text content to be based on Objects + components
 - [ ] Re-do CO2 / website info
-- [ ] Tooltip library
+- [ ] Article filter
 
 DONE:
 - [X] Brought in content (text and imgs) from OG web
+- [X] Tooltip library
 - [X] Film js file drag and drop
+- [X] Email to clipboard
 - [X] Separated pages and components into components
 - [X] Dark mode setting
 - [X] bring in font
