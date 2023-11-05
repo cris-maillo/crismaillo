@@ -6,6 +6,11 @@ import who from '../assets/images/yoko.png';
 
 
 function AboutMe() {
+  
+  function emailToClipboard(){
+    navigator.clipboard.writeText("cristinamaillo.r@gmail.com");
+  }
+
   return (
     <div>
       <div className="aboutMe">
@@ -29,7 +34,7 @@ function AboutMe() {
                     <p><a href="https://github.com/cris-maillo" target="_blank" rel="noreferrer">GitHub</a></p>
                     <p><a href="/imgs/CristinaMaillo2022.pdf" target="_blank" rel="noreferrer">Résumé</a></p>
                     <p><a href="https://www.linkedin.com/in/cristina-maillo/" target="_blank" rel="noreferrer">LinkedIn</a></p>
-                    <p onclick="emailToClipboard()" alt="Click to copy to Clipboard" className="tooltip" style={{cursor: 'pointer'}}>cristinamaillo.r@gmail.com</p>
+                    <p onClick={emailToClipboard} alt="Click to copy to Clipboard" className="tooltip" style={{cursor: 'pointer'}}>cristinamaillo.r@gmail.com</p>
                 </div>
             </div>
             <div className="colophon">
