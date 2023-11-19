@@ -5,6 +5,8 @@ import profilePicM from '../assets/images/profileMobile.png';
 import who from '../assets/images/yoko.png';
 import Tippy from '@tippyjs/react';
 
+import Title from './Title';
+
 
 function AboutMe() {
   
@@ -14,10 +16,7 @@ function AboutMe() {
 
   return (
     <div>
-      <div className="aboutMe">
-        <h2>About Me</h2> 
-      </div>
-
+    <Title title="About Me"/>
     <div className="aboutMecontent">
       <Tippy content="dark matter expo, Berlin" className='tippy'>
         <img className="profilePic" alt="dark matter expo, Berlin" src={profilePic}/>

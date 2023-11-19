@@ -7,6 +7,7 @@ TO DO:
 
 DONE:
 - [X] Brought in content (text and imgs) from OG web
+- [X] tab icon
 - [X] Tooltip library
 - [X] Film js file drag and drop
 - [X] Email to clipboard

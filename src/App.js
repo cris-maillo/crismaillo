@@ -11,9 +11,9 @@ import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
 import AboutMe from './components/AboutMe';
 import Film from './components/Film';
-import Projects from './components/Projects';
-import Text from './components/Text';
-import Toolbox from './components/Toolbox';
+import Projects from './components/Projects/Projects';
+import Text from './components/Texts/Text';
+import Toolbox from './components/Toolbox/Toolbox';
 
 
 function App() {

@@ -2,7 +2,7 @@ import React from 'react';
 import './../index.css';
 
 
-function Article() {
+function Okonomiyaki() {
   return (
     <div>
         <div className="articleHead">
@@ -41,4 +41,4 @@ function Article() {
   );
 }
 
-export default Article;
+export default Okonomiyaki;
