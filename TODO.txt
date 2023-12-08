@@ -2,13 +2,13 @@ TO DO:
 - [ ] restructure css
 - [ ] Refract text content to be based on Objects + components
 - [ ] Article filter
-- [ ] navbar icon active
 
 BACKLOG:
 - [ ] Re-do CO2 / website info
 - [ ] Google Analytics tag
 
 DONE:
+- [X] navbar icon active
 - [X] Brought in content (text and imgs) from OG web
 - [X] tab icon
 - [X] Tooltip library

@@ -45,6 +45,14 @@ function Toolbox() {
                 { label: 'The Idiot', href: 'https://en.wikipedia.org/wiki/The_Idiot_(Batuman_novel)' },
               ],
             },
+            {
+              title: 'Articles + Blogs',
+              resources: [
+                { label: 'Uses This', href: 'https://usesthis.com/' },
+                { label: 'Money Diaries', href: 'https://www.reddit.com/r/MoneyDiariesACTIVE/' },
+                { label: 'Status as a Services', href: 'https://www.eugenewei.com/blog/2019/2/19/status-as-a-service' }
+              ],
+            },
           ],
         },
         {
