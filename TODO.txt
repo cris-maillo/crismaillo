@@ -1,9 +1,12 @@
 TO DO:
 - [ ] restructure css
-- [ ] Google Analytics tag
 - [ ] Refract text content to be based on Objects + components
-- [ ] Re-do CO2 / website info
 - [ ] Article filter
+- [ ] navbar icon active
+
+BACKLOG:
+- [ ] Re-do CO2 / website info
+- [ ] Google Analytics tag
 
 DONE:
 - [X] Brought in content (text and imgs) from OG web

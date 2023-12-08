@@ -94,7 +94,7 @@ function Toolbox() {
             {
               title: 'For',
               resources: [
-                { label: 'People I love', href: '#' },
+                { label: 'People I love'},
               ],
             },
           ],
@@ -108,7 +108,7 @@ function Toolbox() {
         <p>this is a semi-current collection of writing, videos, websites, places, 
             and things that I appreciate, get inspired by, make use of, and think about on a 
             semi-regular basis. i’m always looking for new inspiration to fuel my rabbit holes, 
-            so if you ever come across something you think i’d enjoy, <u><a href="mailto:cristinamaillo.r@gmail.com">please share</a></u>!</p>
+            so if you ever come across something you think i’d enjoy, <a href="mailto:cristinamaillo.r@gmail.com">please share</a>!</p>
         
         <div className="resourcesGrid">
             {themes.map((theme, index) => (
