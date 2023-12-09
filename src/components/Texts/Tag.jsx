@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Tag({ text }) {
+function Tag({ text, onClick, isSelected }) {
   return (
-    <div className="tag">
+    <div className={`tag ${isSelected ? 'selected' : ''}`} onClick={onClick}>
       {text}
     </div>
   );

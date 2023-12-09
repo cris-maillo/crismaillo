@@ -1,13 +1,14 @@
 TO DO:
 - [ ] restructure css
 - [ ] Refract text content to be based on Objects + components
-- [ ] Article filter
+- [ ] Create API page 4 food
 
 BACKLOG:
 - [ ] Re-do CO2 / website info
 - [ ] Google Analytics tag
 
 DONE:
+- [X] Article filter
 - [X] navbar icon active
 - [X] Brought in content (text and imgs) from OG web
 - [X] tab icon
