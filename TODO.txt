@@ -1,0 +1,29 @@
+TO DO:
+- [ ] Create API page 4 food
+- [ ] Fix &apos
+- [ ] Fix favicon
+
+BACKLOG:
+- [ ] Re-do CO2 / website info
+- [ ] Google Analytics tag
+- [ ] Refract article content to be based on Objects + components
+
+DONE:
+- [X] fix css issues
+- [X] Article filter
+- [X] navbar icon active
+- [X] Brought in content (text and imgs) from OG web
+- [X] tab icon
+- [X] Tooltip library
+- [X] Film js file drag and drop
+- [X] Email to clipboard
+- [X] Separated pages and components into components
+- [X] Dark mode setting
+- [X] bring in font
+- [X] use react-router-dom to render content based on navbar
+- [X] bring in functionality to move banner
+- [X] bring in images to all pages in React structure
+    - [X] Landing Page 
+    - [X] About Me
+    - [X] Film
+    - [X] Projects
