@@ -28,7 +28,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink exact to="/cook" activeClassName="active">
-              Cook
+              Cooking
             </NavLink>
           </li>
           <li>

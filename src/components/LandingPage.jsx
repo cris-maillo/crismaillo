@@ -34,7 +34,7 @@ function LandingPage() {
         </span>, 
         through self-taught lines of code, multiple figma drafts, and lots of good vibes.
       </h4>
-      <h4>
+      <h4 style={{zIndex: 0}}>
         In other words, <b>nice to meet you.</b>
       </h4>
     </div>

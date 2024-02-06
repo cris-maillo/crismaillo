@@ -18,7 +18,7 @@ body,html {
   position: relative;
   height: 100%;
   min-height: 100%;
-  font-family: HKGrotesk-ExtraLight;
+  font-family: HKGrotesk-Light;
   line-height: 1.5;
 }
 
@@ -935,22 +935,78 @@ span .lines{
 }
 
 .cookContainer{
-  margin: 0px 20% 10px 10%;
+  margin: 50px 5% 0px 5%;
   display: flex;
+  justify-content: space-between;
+}
+
+.cookSubtitle{
+  margin: 0px 20% 10px 10%;
+}
+
+@media only screen and (max-width: 570px) {
+  .cookContainer{
+    margin: 15px 10% 10% 10%;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .cookSubtitle{
+    margin: 0px 10% 0% 10%;
+  }
 }
 
 .cookContainer .image {
   width: 200px;
   height: 200px;
-  border: 1px solid black; /* Square border */
+  border: 1px solid var(--text-color, white); /* Square border */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Ensures the image stays within the container */
+  margin-bottom: 8px;
 }
 
 .cookContainer img {
   max-width: 100%;
   max-height: 100%;
   padding: 2px 0 2px 0;
+}
+
+.foodCard {
+  overflow: hidden;
+  width: 200px; /* or whatever fixed width you prefer */
+}
+
+.foodTag {
+  border-radius: 20px;
+  border: solid 1px var(--text-color, white);
+  width: fit-content;
+  padding: 0px 8px 0px 8px;
+}
+
+.infoTags{
+  font-size: 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.location {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-bottom: 8px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.date {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #717171;
 }
