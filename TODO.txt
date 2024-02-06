@@ -2,6 +2,7 @@ TO DO:
 - [ ] Create API page 4 food
 - [ ] Fix &apos
 - [ ] Fix favicon
+- [ ] Prettier / eslint
 
 BACKLOG:
 - [ ] Re-do CO2 / website info
