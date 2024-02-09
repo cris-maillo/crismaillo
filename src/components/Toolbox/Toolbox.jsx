@@ -42,6 +42,7 @@ function Toolbox() {
                 { label: 'Crying in H Mart', href: 'https://en.wikipedia.org/wiki/Crying_in_H_Mart' },
                 { label: 'Severance', href: 'https://en.wikipedia.org/wiki/Severance_(novel)' },
                 { label: 'The Idiot', href: 'https://en.wikipedia.org/wiki/The_Idiot_(Batuman_novel)' },
+                { label: 'Franny and Zooey', href: 'https://en.wikipedia.org/wiki/Franny_and_Zooey' },
               ],
             },
             {
@@ -49,7 +50,7 @@ function Toolbox() {
               resources: [
                 { label: 'Uses This', href: 'https://usesthis.com/' },
                 { label: 'Money Diaries', href: 'https://www.reddit.com/r/MoneyDiariesACTIVE/' },
-                { label: 'Status as a Services', href: 'https://www.eugenewei.com/blog/2019/2/19/status-as-a-service' }
+                { label: 'Status as a Service', href: 'https://www.eugenewei.com/blog/2019/2/19/status-as-a-service' }
               ],
             },
           ],
@@ -73,7 +74,7 @@ function Toolbox() {
             {
               title: 'YouTube',
               resources: [
-                { label: "Chef&aposs Night Out", href: 'https://youtu.be/-GWItHgAfPA' },
+                { label: "Chef's Night Out", href: 'https://youtu.be/-GWItHgAfPA' },
                 { label: 'Skid Row, Explained', href: 'https://youtu.be/rKo8Sv99MkM' },
                 { label: 'Mystery Menu', href: 'https://youtu.be/OQqeTB2tK-A' },
               ],
@@ -114,8 +115,8 @@ function Toolbox() {
         <h2>Toolbox</h2>
         <p>this is a semi-current collection of writing, videos, websites, places, 
             and things that I appreciate, get inspired by, make use of, and think about on a 
-            semi-regular basis. i&aposm always looking for new inspiration to fuel my rabbit holes, 
-            so if you ever come across something you think i&aposd enjoy, <a href="mailto:cristinamaillo.r@gmail.com">please share</a>!</p>
+            semi-regular basis. i&apos;m always looking for new inspiration to fuel my rabbit holes, 
+            so if you ever come across something you think i&apos;d enjoy, <a href="mailto:cristinamaillo.r@gmail.com">please share</a>!</p>
         
         <div className="resourcesGrid">
             {themes.map((theme, index) => (

@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import './../App.css';
 
-import BBQ from '../assets/images/film/img_0442.jpeg';
-import IMG1812 from '../assets/images/film/IMG_1812.jpeg';
+import bodrum from '../assets/images/film/IMG_0486.jpeg';
+import bed from '../assets/images/film/bed.jpg';
 import IMG4402 from '../assets/images/film/IMG_4402.jpeg';
 import IMG_4405 from '../assets/images/film/IMG_4405.jpeg';
 import IMG0439 from '../assets/images/film/img_0439.jpeg';
@@ -16,13 +16,13 @@ import Title from './Title';
 const imageArray = [
   {
     id: 'dragImg8',
-    src: BBQ,
-    alt: 'BBQ at Home, London, 2022',
+    src: bodrum,
+    alt: 'Bodrum, 2023',
   },
   {
     id: 'dragImg4',
-    src: IMG1812,
-    alt: 'New York, 2022 (bad scan)',
+    src: bed,
+    alt: 'Oviedo, 2024',
   },
   {
     id: 'dragImg3',
@@ -112,8 +112,8 @@ function Film() {
       <div className="filmTitle">
         <Title title="Film"/>
         <p>
-          a showcase of my life through the lens of an olympus om-2 that I&aposm not very good at using,
-          a leica minilux bought in Germany in the 90s, a yashica df-100 that I can&apost seem to repair,
+          a showcase of my life through the lens of an olympus om-2 that I&apos;m not very good at using,
+          a leica minilux bought in Germany in the 90s, a yashica df-100 that I can&apos;t seem to repair,
           and an olympus infinity zoom 210 that has seen better days; a collection of cameras
           first-owned by both of my grandfathers<span id="resetFilm" onClick={handleResetGallery}> <u>reset gallery</u></span>.
         </p>

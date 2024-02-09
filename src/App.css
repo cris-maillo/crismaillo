@@ -405,7 +405,7 @@ span .lines{
 }
 
 .aboutMecontent .profilePic{
-  max-width: 200px;
+  max-width: 250px;
   max-height: 100%;
   height: auto;
   width: auto;
@@ -752,6 +752,7 @@ span .lines{
   border-radius: 20px;
   padding: 0 10px 0 10px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .tag.selected{
@@ -764,7 +765,6 @@ span .lines{
   .tag:hover{
     background-color: var(--text-color, white);
     color: var(--bg, #1F1F1F);
-    cursor: pointer;
   }
 }
 
@@ -984,6 +984,7 @@ span .lines{
   border: solid 1px var(--text-color, white);
   width: fit-content;
   padding: 0px 8px 0px 8px;
+  cursor: default;
 }
 
 .infoTags{
@@ -993,6 +994,17 @@ span .lines{
   gap: 8px;
 }
 
+.info{
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Adjust grid layout */
+  height: 220px; /* Keep your fixed height */
+}
+
+/* Add this to ensure the date sticks to the bottom */
+.info > .date {
+  align-self: end;
+}
+
 .location {
   font-weight: bold;
   margin-bottom: 8px;
@@ -1000,13 +1012,21 @@ span .lines{
 
 .description {
   margin-bottom: 8px;
-  text-align: justify;
   font-style: normal;
   font-weight: 100;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .date {
-  text-align: right;
   font-size: 0.8rem;
   color: #717171;
+}
+
+@media only screen and (max-width: 420px) {
+  .info{
+    height: min-content;
+    margin-bottom: 20px;
+  }
+
 }

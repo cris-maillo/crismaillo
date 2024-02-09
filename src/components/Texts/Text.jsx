@@ -61,7 +61,8 @@ function Text() {
         </div>
       </div>
       <div className="textContainer">
-        {articles.map((article, index) => (
+        <p style={{marginTop: '20px'}}>nothing to see here, please come back later...</p>
+        {/* {articles.map((article, index) => (
           <ArticlePreview
             key={index}
             tag={article.tag}
@@ -70,7 +71,7 @@ function Text() {
             date={article.date}
             description={article.description}
           />
-        ))}
+        ))} */}
       </div>
     </div>
   );

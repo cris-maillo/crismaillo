@@ -14,7 +14,7 @@ function Projects() {
                     <Project
                         year="2022"
                         projectName="The Odin Project"
-                        projectDescription={`For the past year, I have been following <a href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer">The Odin Project&aposs</a> course for Full Stack Development. I&aposve done various of their practical assignments and can be seen on <a href="https://github.com/stars/cris-maillo/lists/the-odin-project" target="_blank" rel="noopener noreferrer">GitHub</a>.`}
+                        projectDescription={`For the past year, I have been following <a href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer">The Odin Project&apos;s</a> course for Full Stack Development. I&apos;ve done various of their practical assignments and can be seen on <a href="https://github.com/stars/cris-maillo/lists/the-odin-project" target="_blank" rel="noopener noreferrer">GitHub</a>.`}
                     />
                     <Project
                         year="2022"

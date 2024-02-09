@@ -1,6 +1,6 @@
 /* eslint-disable */
 import './../App.css';
-import profilePic from '../assets/images/profile.jpeg';
+import profilePic from '../assets/images/profile2.jpg';
 import profilePicM from '../assets/images/profileMobile.png';
 import who from '../assets/images/yoko.png';
 import Tippy from '@tippyjs/react';
@@ -17,8 +17,8 @@ function AboutMe() {
     <div>
     <Title title="About Me"/>
     <div className="aboutMecontent">
-      <Tippy content="dark matter expo, Berlin" className='tippy'>
-        <img className="profilePic" alt="dark matter expo, Berlin" src={profilePic}/>
+      <Tippy content="Southwark" className='tippy'>
+        <img className="profilePic" alt="somewhere in Southwark" src={profilePic}/>
       </Tippy>
         <img className="profileMobile" alt="dark matter expo, Berlin" src={profilePicM}/>
         <div className="aboutText">
@@ -32,10 +32,10 @@ function AboutMe() {
                 <p>I’m currently a Tech Consultant @ IBM and I am mostly building 
                     my experience as a Business Analyst in the Public Sector. </p>
                 <p>I have a degree in IT Management for Business from the University of Manchester, 
-                    and am slowly working through The Odin Project’s Full Stack Web Development course.</p>
+                    and currently studying part-time MSc Computer Science at the University of Bath.</p>
                 <div className="contactLinks">
-                    <p><a href="https://github.com/cris-maillo" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    <p><a href="/imgs/CristinaMaillo2022.pdf" target="_blank" rel="noopener noreferrer">Résumé</a></p>
+                    <p><a href="https://github.com/cris-maillo/crismaillo" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                    <p><a href="https://crismailo.net/assets/images/CristinaMaillo2022.pdf" target="_blank" rel="noopener noreferrer" download>Résumé</a></p>
                     <p><a href="https://www.linkedin.com/in/cristina-maillo/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                     <Tippy content="Click to copy to Clipboard" className='tippy'>
                       <p onClick={emailToClipboard} alt="Click to copy to Clipboard" style={{cursor: 'pointer'}}>cristinamaillo.r@gmail.com</p>

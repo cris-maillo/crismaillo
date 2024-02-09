@@ -1,6 +1,4 @@
 TO DO:
-- [ ] Create API page 4 food
-- [ ] Fix &apos
 - [ ] Fix favicon
 - [ ] Prettier / eslint
 
@@ -10,6 +8,8 @@ BACKLOG:
 - [ ] Refract article content to be based on Objects + components
 
 DONE:
+- [X] Create API page 4 food
+- [X] Fix &apos
 - [X] fix css issues
 - [X] Article filter
 - [X] navbar icon active
