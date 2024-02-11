@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import '../../App.css';
 import Title from '../Title';
 import Food from './Food';
+import LoadingBar from '../LoadingBar';
 const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
 
 
 function Cook() {
     const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(true); 
 
     const getNumberOfCards = () => {
         if (window.innerWidth > 1600) {
@@ -49,8 +51,9 @@ function Cook() {
     }, []);
 
     useEffect(() => {
-        // Assuming fetchData() is your function that fetches the data
+        setLoading(true)
         fetchData().then(fetchedData => {
+          setLoading(false)
           setData(fetchedData);
         }).catch(error => {
           console.error("Failed to fetch data:", error);
@@ -64,9 +67,11 @@ function Cook() {
                 <p>what I&apos;m cooking and/or eating, hosted on are.na, served through their open-source API.</p>
             </div>
             <div className="cookContainer">
-            {data ? data.slice(0, numberOfCards).map((item, index) => (
+            {loading ? (
+                <LoadingBar/>
+            ) : data.slice(0, numberOfCards).map((item, index) => (
                 <Food key={index} data={item} />
-            )) : <p>fetching...........</p>}
+            ))}
             </div>
         </div>
     );
