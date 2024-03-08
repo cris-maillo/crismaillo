@@ -48,8 +48,8 @@ function AboutMe() {
                     discourse. I believe that having a public, creative, and if possible, self-made, space to 
                     share and introduce yourself online can be somehow restorative.<br/>
                     This website is designed on Figma and built on React & uses GSAP and Tippy as libraries. 
-                    It is hosted on GitHub pages and <a href="https://www.websitecarbon.com/website/crismaillo-net/" target="_blank" rel="noopener noreferrer">produces 0.33g of CO<small>2</small> every time someone visits</a>.
-                    <br/>You can check out the <a href="https://github.com/cris-maillo/crismaillo-web">source code here</a> and 
+                    It is hosted on GitHub pages and <a href="https://www.websitecarbon.com/website/crismaillo-net/" target="_blank" rel="noopener noreferrer">produces 0.93g of CO<small>2</small> every time someone visits</a>.
+                    <br/>You can check out the <a href="https://github.com/cris-maillo/crismaillo">source code here</a> and 
                     my <a href="https://www.figma.com/file/sEhm45WPK5lXzVnEyRmDz6/webwebweb?node-id=0%3A1&t=qISysJrnH9IBYPUp-1" target="_blank" rel="noopener noreferrer">designs here</a>. 
                 </p>
             </div>
@@ -62,8 +62,8 @@ function AboutMe() {
       discourse. I believe that having a public, creative, and if possible, self-made, space to 
       share and introduce yourself online can be somehow restorative.<br/><br/>
       This website is designed on Figma and built on React & uses GSAP and Tippy as libraries. 
-      It is hosted on GitHub pages and <a href="https://www.websitecarbon.com/website/crismaillo-net/" target="_blank" rel="noopener noreferrer">produces 0.33g of CO<small>2</small> every time someone visits</a>.
-      <br/><br/>You can check out the <a href="https://github.com/cris-maillo/crismaillo-web">source code here</a> and 
+      It is hosted on GitHub pages and <a href="https://www.websitecarbon.com/website/crismaillo-net/" target="_blank" rel="noopener noreferrer">produces 0.39g of CO<small>2</small> every time someone visits</a>.
+      <br/><br/>You can check out the <a href="https://github.com/cris-maillo/crismaillo">source code here</a> and 
       my <a href="https://www.figma.com/file/sEhm45WPK5lXzVnEyRmDz6/webwebweb?node-id=0%3A1&t=qISysJrnH9IBYPUp-1" target="_blank" rel="noopener noreferrer">designs here</a>. </p>
     </div>
     </div>

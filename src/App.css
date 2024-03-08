@@ -1053,6 +1053,15 @@ span .lines{
   margin-left: 1px;
 }
 
+.monsterra{
+  position: absolute;
+  z-index: -1;
+  width: 800px;
+  height: 800px;
+  bottom: -350px;
+  right: -150px;
+}
+
 @keyframes loadingAnimation {
   from {
     width: 0%;

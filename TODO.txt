@@ -1,14 +1,17 @@
 TO DO:
-- [ ] Fix favicon
 - [ ] Prettier / eslint
-
-BACKLOG:
-- [ ] Re-do CO2 / website info
-- [ ] Google Analytics tag
 - [ ] Refract article content to be based on Objects + components
 
+BACKLOG:
+- [ ] Now Page
+- [ ] Visitor Counter
+- [ ] RSS Feed
+
 DONE:
+- [X] Google Analytics tag
+- [X] Re-do CO2 / website info
 - [X] Create API page 4 food
+- [X] Fix favicon
 - [X] Fix &apos
 - [X] fix css issues
 - [X] Article filter
