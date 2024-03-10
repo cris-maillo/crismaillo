@@ -13,8 +13,22 @@ function Text() {
       tag: "cooking",
       href: "articles/okonomiyaki.html",
       title: "Okonomiyaki",
-      date: "Wed 28 June",
+      date: "Wed 28 June 2023",
       description: "I have a slight obsession with Okonomiyaki. In my opinion, it is a better omelette version compared to my own country (Tortilla Española), as it has more veg, uses way way less oil than the Spanish version, and slathering it in Kewpie mayo is not only not frowned upon but encouraged."
+    },
+    {
+      tag: "ambling",
+      href: "articles/london-guide.html",
+      title: "London Guide 2024",
+      date: "Sat 9 March 2024",
+      description: "My recommendations in London, by neighbourghood, with a focus on food, of course."
+    },
+    {
+      tag: "crafting",
+      href: "articles/cyanotype.html",
+      title: "Sun Printing and some thoughts on art or creating",
+      date: "Thurs 20 July 2023",
+      description: "or cyanotype making"
     }
   ];
 
@@ -61,8 +75,7 @@ function Text() {
         </div>
       </div>
       <div className="textContainer">
-        <p style={{marginTop: '20px'}}>nothing to see here, please come back later...</p>
-        {/* {articles.map((article, index) => (
+        {articles.map((article, index) => (
           <ArticlePreview
             key={index}
             tag={article.tag}
@@ -71,7 +84,7 @@ function Text() {
             date={article.date}
             description={article.description}
           />
-        ))} */}
+        ))}
       </div>
     </div>
   );

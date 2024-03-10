@@ -9,7 +9,7 @@ function Article() {
                 <h5><a href="/./text.html">← back</a></h5>
             </div>
             <div className="articleTitle">
-                <h2>Okonomiyaki</h2>
+                <h2></h2>
             </div>
         </div>
 
