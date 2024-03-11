@@ -75,7 +75,7 @@ function Text() {
         </div>
       </div>
       <div className="textContainer">
-        {articles.map((article, index) => (
+        {/* {articles.map((article, index) => (
           <ArticlePreview
             key={index}
             tag={article.tag}
@@ -84,7 +84,7 @@ function Text() {
             date={article.date}
             description={article.description}
           />
-        ))}
+        ))} */}
       </div>
     </div>
   );
