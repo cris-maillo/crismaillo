@@ -2,38 +2,43 @@
 import { useState, useEffect } from 'react';
 import '../../App.css';
 
-import Title from './../Title';
+import Title from '../Title';
 import Tag from './Tag';
 import ArticlePreview from './ArticlePreview';
+import matter from 'gray-matter';
+import articleFiles from './articles/index';
+import { Link } from 'react-router-dom';
 
 function Text() {
   const initialTags = ["cooking", "crafting", "ambling", "surfing (the web)"];
-  const initialArticles = [
-    {
-      tag: "cooking",
-      href: "articles/okonomiyaki.html",
-      title: "Okonomiyaki",
-      date: "Wed 28 June 2023",
-      description: "I have a slight obsession with Okonomiyaki. In my opinion, it is a better omelette version compared to my own country (Tortilla Española), as it has more veg, uses way way less oil than the Spanish version, and slathering it in Kewpie mayo is not only not frowned upon but encouraged."
-    },
-    {
-      tag: "ambling",
-      href: "articles/london-guide.html",
-      title: "London Guide 2024",
-      date: "Sat 9 March 2024",
-      description: "My recommendations in London, by neighbourghood, with a focus on food, of course."
-    },
-    {
-      tag: "crafting",
-      href: "articles/cyanotype.html",
-      title: "Sun Printing and some thoughts on art or creating",
-      date: "Thurs 20 July 2023",
-      description: "or cyanotype making"
-    }
-  ];
-
   const [selectedTags, setSelectedTags] = useState([]);
   const [articles, setArticles] = useState([]);
+  const [initialArticles, setInitialArticles] = useState([]);
+
+  useEffect(() => {
+    Promise.all(articleFiles)
+      .then(files => {
+        return Promise.all(files.map(file => fetch(file.default).then(response => response.text())));
+      })
+      .then(contents => {
+        const articlesWithMetadata = contents.map(content => {
+          const { data } = matter(content);
+          return {
+            id: data.id,
+            title: data.title,
+            date: data.date,
+            tag: data.tag,
+            description: data.description,
+          };
+        });
+        setArticles(articlesWithMetadata);
+        setInitialArticles(articlesWithMetadata);
+      })
+      .catch(error => {
+        console.error("Error loading articles:", error);
+      });
+  }, [])
+
 
   const toggleTag = (tag) => {
     const index = selectedTags.indexOf(tag);
@@ -43,10 +48,6 @@ function Text() {
       setSelectedTags(selectedTags.filter((item) => item !== tag));
     }
   };
-
-  useEffect(() => {
-    setArticles(initialArticles); 
-  }, []);
 
   useEffect(() => {
     if (selectedTags.length === 0) {
@@ -76,14 +77,14 @@ function Text() {
       </div>
       <div className="textContainer">
         {articles.map((article, index) => (
-          <ArticlePreview
-            key={index}
-            tag={article.tag}
-            href={article.href}
-            title={article.title}
-            date={article.date}
-            description={article.description}
-          />
+          <Link to={`/article/${article.id}`} key={index} style={{ textDecoration: 'none' }}>
+            <ArticlePreview
+              tag={article.tag}
+              title={article.title}
+              date={article.date}
+              description={article.description}
+            />
+          </Link>
         ))}
       </div>
     </div>

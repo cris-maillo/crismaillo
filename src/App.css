@@ -1061,3 +1061,7 @@ span .lines{
     width: 90%;
   }
 }
+
+.returnButton{
+  cursor: pointer;
+}

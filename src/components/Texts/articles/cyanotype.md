@@ -1,12 +1,10 @@
 ---
-tags: ["crafting"]
+id: "cyanotype"
+tag: "crafting"
 title: "Sun Printing and some thoughts on art or creating"
-date: 2023-07-20
+date: "20th July 2023"
 description: "or cyanotype making"
 ---
-
-# Sun Printing and some thoughts on art or creating
-## or cyanotype making
 
 I recently bought a Sun Printing kit which includes the pre-prepared paper and an acrylic sheet as a weight. I have been loving art kits as they are always a quick and easy way to find a creative interest (creative in the sense of creating, not necessarily in originality) and especially away from screens. 
 

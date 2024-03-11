@@ -1,11 +1,10 @@
 ---
-tags: ["cooking"]
+id: "Okonomiyaki"
+tag: "cooking"
 title: "Okonomiyaki"
-date: 2023-06-28
+date: "28th June 2023"
 description: "I have a slight obsession with Okonomiyaki. In my opinion, it is a better omelette version compared to my own country (Tortilla Española), as it has more veg, uses way way less oil than the Spanish version, and slathering it in Kewpie mayo is not only not frowned upon but encouraged."
 ---
-
-# Okonomiyaki
 
 I have a slight obsession with Okonomiyaki. In my opinion, it is a better omelette version compared to my own country (Tortilla Española), as it has more veg, uses way *way* less oil than the Spanish version, and slathering it in Kewpie mayo is not only not frowned upon but encouraged. 
 
