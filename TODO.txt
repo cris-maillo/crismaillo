@@ -1,6 +1,10 @@
 TO DO:
 - [ ] Fix favicon
 - [ ] Prettier / eslint
+- [ ] Articles scrollable
+- [ ] Link Articles new page blank
+- [ ] articles better heading structure
+- [ ] okonomiyaki link from toolbox to articlces
 
 BACKLOG:
 - [ ] Re-do CO2 / website info

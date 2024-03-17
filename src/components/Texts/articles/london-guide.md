@@ -3,7 +3,7 @@ id: "london-guide"
 tag: "ambling"
 title: "London Guide 2024"
 date: "9th March 2024"
-description: "My recommendations in London, by neighbourghood, with a focus on food, of course."
+description: "My recommendations in London, by neighbourhood, with a focus on food, of course."
 ---
 
 A guide of mostly food and food-adjacent recommendations in London. Probably not recommended for tourists as I've skipped a lot of places that although I personally wouldn't recommend, they must be visited at least once (yes Leicester Square I am looking at you).
@@ -34,7 +34,7 @@ Grocery & Cookshops:
 - Season
 - Borough Kitchen
 - Superette
-- Avo???? (really good produce and some Spanish staples)
+- Avoman (really good produce and some Spanish staples)
 - Moxon's Fishmongers
 - Camden Passage is full of little grocers
 
@@ -42,16 +42,17 @@ Restaurants:
 - Black Axe Mangal (one of my favourites, always really interesting menu)
 - The Compton Arms (has chef residencies)
 - MeatLiquor (good burgers)
+- The Tamil Prince
 - Tofu Vegan (I haven't been but apparently really good)
 
 Closer to Angel station, you'll find Camden Passage which is a beautiful street full of little local shops. From there, the walk east from the canal is very green, and you might be lucky enough to end up at Towpath for brunch (beware of queues).
 
 ##### Stoke Newington
-Stoke Newington's main attraction (in my opinion), is Church Street (confirm name). Semi-pedestrianised, it is a lovely street to spend a morning walking through. It's full of stores so make sure you leave plenty of time to browse.
+Stoke Newington's main attraction (in my opinion), is Stoke Newington Church Street. Semi-pedestrianised, it is a lovely street to spend a morning walking through. It's full of stores so make sure you leave plenty of time to browse.
 
-On the way to or back from Stoke Newington, I'd recommend stopping at (?). Here you'll find Jolene (amazing pastries, somehow even better for dinner) and three little local shops for great produce (Stella's (butcher which doubles as a listening bar), Oeno Maris (maybe a bit overpriced), and ???).
+On the way to or back from Stoke Newington, I'd recommend stopping at Newington Green. Here you'll find Jolene (amazing pastries, somehow even better dinner menu) and three little local shops for great produce (Stella's (butcher which doubles as a listening bar), Oeno Maris (maybe a bit overpriced), and Newington Green Fruits & Veg).
 
-Further away, in Finsbury Park you can also find Four Legs, a pub that somehow had the best burger and best ravioli I'd ever had.
+Further away, in Finsbury Park, you can also find Four Legs, a pub that somehow had the best burger and best ravioli I'd ever had.
 
 #### Camden
 Don't.
@@ -62,15 +63,16 @@ Don't.
 ##### Hackney
 In my opinion, Hackney's main appeal is Broadway Market Street (both on market and non-market days) and London Fields at its end. Only drawback of Broadway Market is that it has too many solid coffee options - how will you ever choose?
 The east side of London Fields has Netil Market, with really good market stalls and a rooftop bar.
-The top (north) side of the park poses yet another decision: head west and stop at The Spurstowe Arms for a pint and a burger and then Violet Cakes for a coffee and a cupcake (elite diet if you ask me), or head east to Hackney ??? for a burger at Lagom (currently my favourite beef burger in London).
-Hackney Central (check) also homes the Dusty Knuckle and its delicious focaccia.
-If it's a Saturday (check???) and you have plenty of time, I'd recommend starting your day in Columbia Road for the weekly Flower Market. 
+The top (north) side of the park poses yet another decision: head west and stop at The Spurstowe Arms for a pint and a burger and then Violet Cakes for a coffee and a cupcake (elite diet if you ask me), or head east to Hackney Central for a burger at Lagom (currently my favourite beef burger in London).
+Dalston Central also homes the Dusty Knuckle and its delicious focaccia.
+If it's a Sunday and you have plenty of time, I'd recommend starting your day in Columbia Road for the weekly Flower Market. 
 
 #### Central
 
 ##### Bloomsbury
 I'm actually not sure if any of these are actually in Bloomsbury, but take this as the "central-London-but-not-really" section:
-- Exmouth Market (Noble Rot Lambs Conduit)
+- Exmouth Market
+- Noble Rot
 - Sessions Arts Club
 - St. John Restaurant
 - The beautifully brutalist Barbican Estate and its Conservatory (requries tickets and can be hard to book, they also do architecture tours a few times a week)
@@ -91,9 +93,9 @@ I don't tend to head south, but when I do, you'll find me at one of the below:
 - 180 Studios
 
 ##### Activities
-- Canal boat from Paddington/Little Venice to Camden (or viceversa)
+- Canal boat from Paddington/Little Venice to Camden (or in the opposite direction)
 - "Free" walking tour (a tip is expected at the end)
 - The Browser Walking Tours
 - Theatre (my favourite being the National Theatre)
 - Barbican Architecture Tour
-- Open Spaces (check??) Walking Tours
+- Open City Walking Tours
