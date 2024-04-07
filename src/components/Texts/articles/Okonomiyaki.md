@@ -7,13 +7,13 @@ description: "I have a slight obsession with Okonomiyaki. In my opinion, it is a
 ---
 
 I have a slight obsession with Okonomiyaki. In my opinion, it is a better omelette version compared to my own country (Tortilla Española), as it has more veg, uses way *way* less oil than the Spanish version, and slathering it in Kewpie mayo is not only not frowned upon but encouraged. 
+<br><br>
+I have only tried it once from an actual Hiroshiman chef <a href="https://www.pelliclemag.com/home/2021/3/8/fumio-tanga-bridging-the-izakaya-pub-divide-shofoodoh" target="_blank">this article about him is a nice read</a>, however, I “cook” it religiously at home. 
 
-I have only tried it once from an actual Hiroshiman chef ([this article about him is a nice read](https://www.pelliclemag.com/home/2021/3/8/fumio-tanga-bridging-the-izakaya-pub-divide-shofoodoh)), however, I “cook” it religiously at home. 
-
-You might have noticed the quotation marks around “cook” and this is because I won't shy away from admitting that I have taken extreme liberties on the original recipe that I first looked at ([Just One Cookbook](https://www.justonecookbook.com/okonomiyaki/)). Some ingredients I tend to omit or replace just because they are a bit harder to find in London and others I skip as I prefer not to buy perishable ingredients that aren't used up entirely in the recipe.
-
+You might have noticed the quotation marks around “cook” and this is because I won't shy away from admitting that I have taken extreme liberties on the original recipe that I first looked at <a href="https://www.justonecookbook.com/okonomiyaki/" target="_blank">Just One Cookbook</a>. Some ingredients I tend to omit or replace just because they are a bit harder to find in London and others I skip as I prefer not to buy perishable ingredients that aren't used up entirely in the recipe.
+<br><br>
 I am at peace with my modifications and I definitely will not claim authenticity of my recipe especially because (according to Wikipedia), the name is derived from the word okonomi, meaning "how you like" or "what you like" and this is, no doubt, what I like.
-
+<br><br>
 Anyway, the Just One Cookbook recipe is great (it is based on the Kansai area Okonomiyaki variation), so I will leave that as the main resource and just note my adaptations:
 
 - I skip the Nagaimo as I haven't found it anywhere and as a substitute use Baking Powder as recommended by Just One Cookbook

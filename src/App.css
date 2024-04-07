@@ -797,9 +797,11 @@ span .lines{
   margin: 0px 20% 10px 10%;
 }
 
-.textContainer.article{
-  height: 50%;
+.textContainer {
+  max-height: calc(100vh - 300px); /* Subtracting 20px from the viewport height */
+  overflow-y: auto; /* Adding scrollbar when content overflows */
 }
+
 
 @media only screen and (max-width: 970px) {
   .textContainer{

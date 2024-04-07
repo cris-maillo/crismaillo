@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown'; 
+import rehypeRaw from "rehype-raw";
 import articleFiles from './articles/index';
 import { useNavigate } from 'react-router-dom';
 import '../../App.css';
@@ -13,8 +14,8 @@ const Article = () => {
 
   useEffect(() => {
     const loadArticle = async () => {
-      const resolvedFiles = await Promise.all(articleFiles); // Resolve all dynamic imports
-      const matchedFile = resolvedFiles.find(file => file.default.includes(id)); // Assuming the resolved object has a 'default' key that includes the ID
+      const resolvedFiles = await Promise.all(articleFiles); 
+      const matchedFile = resolvedFiles.find(file => file.default.includes(id));
 
       if (matchedFile) {
         const response = await fetch(matchedFile.default);
@@ -42,7 +43,7 @@ const Article = () => {
         </div>
 
         <div className="textContainer article">
-            <div className="articleText"><ReactMarkdown>{articleContent.articleBody}</ReactMarkdown></div>
+            <div className="articleText"><ReactMarkdown rehypePlugins={[rehypeRaw]}>{articleContent.articleBody}</ReactMarkdown></div>
         </div>
     </div>
   );

@@ -9,8 +9,9 @@ description: "My recommendations in London, by neighbourhood, with a focus on fo
 A guide of mostly food and food-adjacent recommendations in London. Probably not recommended for tourists as I've skipped a lot of places that although I personally wouldn't recommend, they must be visited at least once (yes Leicester Square I am looking at you).
 I'll be structuring it out in terms of boroughs/areas, so that you can make a day out of most of them.
 
-
+<br><br>
 ### Neighbourhoods
+<br>
 
 #### Islington
 
@@ -26,6 +27,7 @@ In Coal Drops Yard I'd recommend for food (and probably in the order I'd recomme
 - Beer + Burger (ok burgers, impressive beer selection)
 
 Outside of Coal Drops, I love visiting the British Library, and Roti King or Dim Sum Duck are great lunch spots.
+<br><br>
 
 ##### Angel
 Upper Street between Highbury and Angel is a very nice walk, I'd recommend either direction. The high street is full of the usual shops, but there is plenty of semi-independent and independent stores and restaurants:
@@ -46,6 +48,7 @@ Restaurants:
 - Tofu Vegan (I haven't been but apparently really good)
 
 Closer to Angel station, you'll find Camden Passage which is a beautiful street full of little local shops. From there, the walk east from the canal is very green, and you might be lucky enough to end up at Towpath for brunch (beware of queues).
+<br><br>
 
 ##### Stoke Newington
 Stoke Newington's main attraction (in my opinion), is Stoke Newington Church Street. Semi-pedestrianised, it is a lovely street to spend a morning walking through. It's full of stores so make sure you leave plenty of time to browse.
@@ -53,10 +56,11 @@ Stoke Newington's main attraction (in my opinion), is Stoke Newington Church Str
 On the way to or back from Stoke Newington, I'd recommend stopping at Newington Green. Here you'll find Jolene (amazing pastries, somehow even better dinner menu) and three little local shops for great produce (Stella's (butcher which doubles as a listening bar), Oeno Maris (maybe a bit overpriced), and Newington Green Fruits & Veg).
 
 Further away, in Finsbury Park, you can also find Four Legs, a pub that somehow had the best burger and best ravioli I'd ever had.
+<br><br>
 
 #### Camden
 Don't.
-
+<br><br>
 
 #### East
 
@@ -66,6 +70,7 @@ The east side of London Fields has Netil Market, with really good market stalls 
 The top (north) side of the park poses yet another decision: head west and stop at The Spurstowe Arms for a pint and a burger and then Violet Cakes for a coffee and a cupcake (elite diet if you ask me), or head east to Hackney Central for a burger at Lagom (currently my favourite beef burger in London).
 Dalston Central also homes the Dusty Knuckle and its delicious focaccia.
 If it's a Sunday and you have plenty of time, I'd recommend starting your day in Columbia Road for the weekly Flower Market. 
+<br><br>
 
 #### Central
 
