@@ -13,7 +13,7 @@ function Toolbox() {
               resources: [
                 { label: 'tomasmaillo.com', href: 'https://www.tomasmaillo.com/' },
                 { label: 'are.na', href: 'https://www.are.na/' },
-                { label: 'Sunday Sites', href: 'https://sundaysites.cafe/' },
+                { label: 'Sunday Sites', href: 'https://sundaysites-cris.glitch.me/' },
               ],
             },
             {
