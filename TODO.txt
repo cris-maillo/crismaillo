@@ -5,9 +5,14 @@ TO DO:
 BACKLOG:
 - [ ] Re-do CO2 / website info
 - [ ] Google Analytics tag
-- [ ] Refract article content to be based on Objects + components
 
 DONE:
+- [X] okonomiyaki link from toolbox to articlces
+- [X] articles better heading structure
+- [X] Refract article content to be based on Objects + components
+- [X] Articles scrollable
+- [X] Link Articles new page blank
+- [X] Cyanotype article
 - [X] Create API page 4 food
 - [X] Fix &apos
 - [X] fix css issues

@@ -87,7 +87,7 @@ function Toolbox() {
             {
               title: 'What',
               resources: [
-                { label: 'Okonomiyaki', href: './articles/okonomiyaki.html' },
+                { label: 'Okonomiyaki', href: './article/Okonomiyaki' },
                 { label: 'Best Lasagna', href: 'https://www.epicurious.com/recipes/food/views/our-favorite-lasagna-with-sausage-spinach-and-three-cheeses-51253440' },
               ],
             },
