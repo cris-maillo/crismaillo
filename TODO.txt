@@ -1,5 +1,6 @@
 TO DO:
 - [ ] Prettier / eslint
+- [ ] Fix Articles for mobile
 
 BACKLOG:
 - [ ] Now Page
