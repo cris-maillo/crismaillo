@@ -6,7 +6,7 @@ date: "9th March 2024"
 description: "My recommendations in London, by neighbourhood, with a focus on food, of course."
 ---
 
-A guide of mostly food and food-adjacent recommendations in London. Probably not recommended for tourists as I've skipped a lot of places that although I personally wouldn't recommend, they must be visited at least once (yes Leicester Square I am looking at you).
+A guide of mostly food and food-adjacent recommendations in London. Probably not recommended for tourists as I've skipped a lot of places that although I personally wouldn't recommend, they must be visited at least once (yes, Leicester Square, I am looking at you).
 I'll be structuring it out in terms of boroughs/areas, so that you can make a day out of most of them.
 
 <br><br>

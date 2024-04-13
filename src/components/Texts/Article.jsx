@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import rehypeRaw from "rehype-raw";
 import articleFiles from './articles/index';
 import { useNavigate } from 'react-router-dom';
+import LoadingBar from '../LoadingBar';
 import '../../App.css';
 
 const Article = () => {
@@ -29,7 +30,7 @@ const Article = () => {
     loadArticle().catch(console.error);
   }, [id]);
 
-  if (!articleContent) return <div>Loading...</div>;
+  if (!articleContent) return <LoadingBar/>;
 
   return (
     <div>

@@ -266,6 +266,14 @@ hr {
   text-decoration-thickness: 1px;
 }
 
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+} 
+
 
 .intro{
   margin: 100px 20% 0px 10%;
@@ -805,16 +813,24 @@ span .lines{
 
 @media only screen and (max-width: 970px) {
   .textContainer{
-    height: fit-content;
+    max-height: calc(100vh - 250px);
     padding-right: 0px;
     margin: 0px 10% 0px 10%;
-    overflow: hidden;
-    text-align: justify;
   }
 
-  .textContainer.article{
-    height: fit-content;
+  .articleTitle h3{
+    font-size: 20px;
   }
+
+  .textContainer::-webkit-scrollbar-track,
+  .textContainer::-webkit-scrollbar,
+  .textContainer::-webkit-scrollbar-thumb {
+    border-radius: initial;
+    background-color: initial;
+    border: initial;
+  }
+
+  
 }
 
 .toolboxContainer{
@@ -1030,11 +1046,13 @@ span .lines{
     height: min-content;
     margin-bottom: 20px;
   }
-
 }
 
 .loadingBarContainer{
   margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .loadingBar {

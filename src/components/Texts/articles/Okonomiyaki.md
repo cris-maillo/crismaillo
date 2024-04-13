@@ -17,7 +17,6 @@ I am at peace with my modifications and I definitely will not claim authenticity
 Anyway, the Just One Cookbook recipe is great (it is based on the Kansai area Okonomiyaki variation), so I will leave that as the main resource and just note my adaptations:
 
 - I skip the Nagaimo as I haven't found it anywhere and as a substitute use Baking Powder as recommended by Just One Cookbook
-- I skip the Nagaimo as I haven't found it anywhere and as a substitute use Baking Powder as recommended by Just One Cookbook
 - I use regular flour as an alternative to Okonomiyaki Flour
 - I normally use bacon over pork belly unless I am feeling fancy
 - I skip Tenkasu (Tempura Scraps) entirely
