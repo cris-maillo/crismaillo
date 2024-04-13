@@ -6,6 +6,3 @@ export default function Monsterra() {
     <Spline scene="https://prod.spline.design/dRciKx96PTkLbgvY/scene.splinecode" />
   );
 }
-
-
-
