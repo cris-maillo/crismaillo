@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import technologists from '../assets/images/technologists.jpeg';
 import digGarden from '../assets/images/digGarden.gif';
 import dream from '../assets/images/dream.jpeg';
+import Monsterra from './Monsterra';
 
 function LandingPage() {
   return (
+    <>
     <div className="intro">
       <h2>welcome,</h2>
       <h4>
@@ -38,6 +40,10 @@ function LandingPage() {
         In other words, <b>nice to meet you.</b>
       </h4>
     </div>
+    <div className='monsterra'>
+      <Monsterra/>
+    </div>
+    </>
   );
 }
 

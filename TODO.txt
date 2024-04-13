@@ -1,10 +1,10 @@
 TO DO:
-- [ ] Fix favicon
 - [ ] Prettier / eslint
 
 BACKLOG:
-- [ ] Re-do CO2 / website info
-- [ ] Google Analytics tag
+- [ ] Now Page
+- [ ] Visitor Counter
+- [ ] RSS Feed
 
 DONE:
 - [X] okonomiyaki link from toolbox to articlces
@@ -14,6 +14,7 @@ DONE:
 - [X] Link Articles new page blank
 - [X] Cyanotype article
 - [X] Create API page 4 food
+- [X] Fix favicon
 - [X] Fix &apos
 - [X] fix css issues
 - [X] Article filter

@@ -17,12 +17,16 @@ I am at peace with my modifications and I definitely will not claim authenticity
 Anyway, the Just One Cookbook recipe is great (it is based on the Kansai area Okonomiyaki variation), so I will leave that as the main resource and just note my adaptations:
 
 - I skip the Nagaimo as I haven't found it anywhere and as a substitute use Baking Powder as recommended by Just One Cookbook
+- I skip the Nagaimo as I haven't found it anywhere and as a substitute use Baking Powder as recommended by Just One Cookbook
 - I use regular flour as an alternative to Okonomiyaki Flour
 - I normally use bacon over pork belly unless I am feeling fancy
 - I skip Tenkasu (Tempura Scraps) entirely
 - I always add green onions in the batter and as topping and usually grate carrot over the batter for some added health
 - I make my own homemade version of Okonomiyaki Sauce with JOC's recipe too
+- I always add green onions in the batter and as topping and usually grate carrot over the batter for some added health
+- I make my own homemade version of Okonomiyaki Sauce with JOC's recipe too
 - I skip Katsuobushi entirely. It is fun to use and can be used to make Dashi but I have only seen it sold in big bags that ultimately go to waste in my kitchen.
+- And finally, I usually skip pickled red ginger too just because I haven't tried it before but this can definitely be found in London.
 - And finally, I usually skip pickled red ginger too just because I haven't tried it before but this can definitely be found in London.
 
 As a final note, I use the leftover cabbage to either make slaw or roasted cabbage, because there is always leftover cabbage.
