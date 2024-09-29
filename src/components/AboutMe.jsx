@@ -6,8 +6,18 @@ import who from '../assets/images/yoko.png';
 import Tippy from '@tippyjs/react';
 import Title from './Title';
 
-
 function AboutMe() {
+
+  function age() {
+    var today = new Date();
+    var birthDate = new Date("1999-07-23");
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
   
   function emailToClipboard(){
     navigator.clipboard.writeText("cristinamaillo.r@gmail.com");
@@ -25,7 +35,7 @@ function AboutMe() {
             <p className="me">Hey, I’m Cris (she/her). I’m a London-based,{" "}
             <Tippy content="Asturias, Northern Spain" className='tippy'>
               <span className="textHover" alt="Asturias, Northern Spain" style={{cursor: 'help'}}>Oviedo</span>
-            </Tippy>-born 23-year-old. I tend to avoid any definitions of who I am as I personally believe that life and the act of being 
+            </Tippy>-born {age()}-year-old. I tend to avoid any definitions of who I am as I personally believe that life and the act of being 
                 are ever-changing and <span className="image-wrapper textHover">usually too ambigious<img className="image" src={who} alt="yoko ono not knowing who she is"/> to ever be fully truthful.</span></p>
             <p className="values">I <wbr/>believe in the value of commu<wbr/>nity and avoid being a hypocr<wbr/>ite above all else.</p>
             <div className="doing">

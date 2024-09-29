@@ -11,11 +11,11 @@ function NavBar() {
               Projects
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink exact to="/text" activeClassName="active">
               Text
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink exact to="/film" activeClassName="active">
               Film
