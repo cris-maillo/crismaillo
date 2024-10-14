@@ -1,5 +1,7 @@
 /* eslint-disable */
 import './../App.css';
+import React, { useEffect, useState } from 'react';
+import Tippy from '@tippyjs/react';
 import { Link } from 'react-router-dom';
 import technologists from '../assets/images/technologists.jpeg';
 import digGarden from '../assets/images/digGarden.gif';
@@ -7,6 +9,30 @@ import dream from '../assets/images/dream.jpeg';
 import Monsterra from './Monsterra';
 
 function LandingPage() {
+  const [lastUpdated, setLastUpdated] = useState(null);
+
+  useEffect(() => {
+    const fetchLastCommitDate = async () => {
+      try {
+        const response = await fetch(
+          'https://api.github.com/repos/cris-maillo/crismaillo/commits/main'
+        );
+        const data = await response.json();
+        const commitDate = new Date(data.commit.committer.date);
+        const options = {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        setLastUpdated(commitDate.toLocaleDateString("en-GB", options));
+      } catch (error) {
+        console.error('Error fetching last commit date:', error);
+      }
+    };
+
+    fetchLastCommitDate();
+  }, []);
+
   return (
     <>
     <div className="intro">
@@ -17,7 +43,7 @@ function LandingPage() {
           <img className="image" src={technologists} alt="girls on lappy" />
           <span>internet</span>
         </span>. 
-        An experimental &amp; ever-changing (verging on self-absorbed) space to share{" "}
+        An experimental &amp; <Tippy content={"last update: " + (lastUpdated || '29 September 2024')} className='tippy'><span className='textHover'>ever-changing</span></Tippy> (verging on self-absorbed) space to share{" "}
         <Link to="/about">who I am</Link>,{" "}  
         <Link to="/projects">what I've done</Link>, 
         what I’m doing now,{" "}

@@ -7,32 +7,32 @@ function NavBar() {
       <nav>
         <ul>
           <li>
-            <NavLink exact to="/projects" activeClassName="active">
+            <NavLink exact="true" to="/projects" activeClassName="active">
               Projects
             </NavLink>
           </li>
           {/* <li>
-            <NavLink exact to="/text" activeClassName="active">
+            <NavLink exact="true" to="/text" activeClassName="active">
               Text
             </NavLink>
           </li> */}
           <li>
-            <NavLink exact to="/film" activeClassName="active">
+            <NavLink exact="true" to="/film" activeClassName="active">
               Film
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/toolbox" activeClassName="active">
+            <NavLink exact="true" to="/toolbox" activeClassName="active">
               Toolbox
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/cook" activeClassName="active">
+            <NavLink exact="true" to="/cook" activeClassName="active">
               Cooking
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/about" activeClassName="active">
+            <NavLink exact="true" to="/about" activeClassName="active">
               About Me
             </NavLink>
           </li>
