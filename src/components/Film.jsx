@@ -11,8 +11,6 @@ import IMG7396 from '../assets/images/film/IMG_7396.jpeg';
 import IMG7417 from '../assets/images/film/IMG_7417.jpeg';
 import Tippy from '@tippyjs/react';
 
-import Title from './Title';
-
 const imageArray = [
   {
     id: 'dragImg8',
@@ -110,7 +108,6 @@ function Film() {
   return (
     <div>
       <div className="filmTitle">
-        <Title title="Film"/>
         <p>
           a showcase of my life through the lens of an olympus om-2 that I&apos;m not very good at using,
           a leica minilux bought in Germany in the 90s, a yashica df-100 that I can&apos;t seem to repair,

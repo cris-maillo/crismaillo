@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@geist-ui/icons": "^1.0.2",
     "@react-three/drei": "^9.101.0",
     "@react-three/fiber": "^8.15.19",
     "@splinetool/react-spline": "^2.2.6",
@@ -19,11 +20,13 @@
     "@vercel/speed-insights": "^1.0.9",
     "buffer": "^6.0.3",
     "front-matter": "^4.0.2",
+    "geist-icons": "^1.2.3",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.2",
     "marked": "^12.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.4.0",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.18.0",
     "rehype-raw": "^7.0.0",

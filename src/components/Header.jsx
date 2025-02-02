@@ -1,26 +1,38 @@
 import './../App.css';
-import ellipse from '../assets/images/ellipse.svg';
-import smiley from '../assets/images/smiley.svg';
+import { GiStripedSun } from "react-icons/gi";
+import { PiMoonStarsLight } from "react-icons/pi";
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 function Header() {
+  const [isLightMode, setIsLightMode] = useState(() => {
+    const storedTheme = localStorage.getItem('theme');
+    return storedTheme === 'light';
+  });
+
+  const toggleMode = () => {
+    const newTheme = isLightMode ? 'dark' : 'light';
+    localStorage.setItem('theme', newTheme);
+    setIsLightMode(!isLightMode);
+  };
+
+  useEffect(() => {
+    if(isLightMode){
+      document.body.classList.add('light');
+    }else{
+      document.body.classList.remove('light');
+    }
+  }, [isLightMode]);
+
   return (
     <div className="container">
       <div className="logo">
         <h1>
           <Link to="/">Cris Maillo</Link>
         </h1>
-        <img className="smileySvg" src={smiley} alt="Smiley" />
-        <div className="ellipseContainer">
-          <Link to="/">
-            <img className="ellipseSvg" src={ellipse} alt="Ellipse" />
-            <img className="ellipseSvg" src={ellipse} alt="Ellipse" style={{ transform: "rotate(10deg)" }} />
-          </Link>
+        <div onClick={toggleMode} className='themeIcon'>
+          {isLightMode ? <GiStripedSun size={24}/> : <PiMoonStarsLight size={24}/>}
         </div>
-      </div>
-
-      <div className="divider">
-        <hr />
       </div>
     </div>
   );

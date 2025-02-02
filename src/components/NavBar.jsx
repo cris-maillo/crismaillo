@@ -6,11 +6,11 @@ function NavBar() {
     <div className="navbar">
       <nav>
         <ul>
-          <li>
+          {/* <li>
             <NavLink exact="true" to="/projects" activeClassName="active">
               Projects
             </NavLink>
-          </li>
+          </li> */}
           {/* <li>
             <NavLink exact="true" to="/text" activeClassName="active">
               Text
@@ -21,11 +21,11 @@ function NavBar() {
               Film
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink exact="true" to="/toolbox" activeClassName="active">
               Toolbox
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink exact="true" to="/cook" activeClassName="active">
               Cooking
