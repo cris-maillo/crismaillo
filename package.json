@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@geist-ui/icons": "^1.0.2",
     "@react-three/drei": "^9.101.0",
     "@react-three/fiber": "^8.15.19",
     "@splinetool/react-spline": "^2.2.6",
@@ -20,7 +19,6 @@
     "@vercel/speed-insights": "^1.0.9",
     "buffer": "^6.0.3",
     "front-matter": "^4.0.2",
-    "geist-icons": "^1.2.3",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.2",
     "marked": "^12.0.1",
