@@ -36,7 +36,7 @@ function LandingPage() {
   return (
     <>
     <div className="intro">
-      <h2>welcome,</h2>
+      <h3>welcome,</h3>
       <h4>
         this is my very own personal space on the{" "}
         <span className="image-wrapper textHover">

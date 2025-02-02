@@ -92,10 +92,11 @@ body{
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 45px;
   line-height: 50px;
   letter-spacing: -0.05em;
+  font-family: HKGrotesk-Medium;
 }
 
 h2 {
@@ -223,7 +224,7 @@ h6{
 
 .navbar a:hover, .navbar .active {
   background-image: var(--navImage, url(./assets/images/tinyblurPink.svg));
-  background-size: 35px 35px;
+  background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: center;
   text-decoration: none;
