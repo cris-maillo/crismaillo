@@ -12,6 +12,12 @@ const projects = [
     link: 'https://fabrika-live.vercel.app/',
   },
   {
+    year: '2024',
+    title: 'LED Screen',
+    description: 'Tutorial on how to set up a RGB LED Screen with a ESP32-WROOM-32 microcontroller and how to display gifs on it',
+    link: 'https://github.com/cris-maillo/led-panel-tutorial',
+  },
+  {
     year: '2020',
     title: 'YogAI',
     description: 'I created <a href="https://cris-maillo.github.io/yogAI/" target="_blank" rel="noopener noreferrer">yogAI</a> inspired by various Machine Learning models for visual recognition I experimented with during my internship. YogAI is built using <a href="https://www.tensorflow.org/lite/models/pose_estimation/overview" target="_blank" rel="noopener noreferrer">Pose.Net</a>, developed by TensorFlow, and <a href="https://ml5js.org/" target="_blank" rel="noopener noreferrer">ml5.js</a>.',
@@ -104,7 +110,7 @@ function LandingPage() {
         <p className="intro">
           Hey I&apos;m Cris. I like to do things. Maybe too many things. I design,
           I build, I write, I learn. I&apos;m a Data Consultant at IBM interested
-          in BI and Data Consumption. I&apos;ve built yoga.AI, fabrika, and
+          in BI and Data Consumption. I&apos;ve built yoga.AI, fabrika, and I'm
           currently building AAA. I like tinkering with hardware, cameras,
           touchdesigner, synths. I live in London and I love exploring London. I
           like having a drink and a snack with my friends in terraces in the sun.

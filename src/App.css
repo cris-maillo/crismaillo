@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------ */
 /*  Cris Maillo — 2026                                                 */
-/*  Font: Akzidenz-Grotesk BQ (falls back to Helvetica Neue / Arial)   */
+/*  Font: HK Grotesk / Hanken Grotesk (falls back to Helvetica / Arial) */
 /* ------------------------------------------------------------------ */
 
 :root {
@@ -8,15 +8,21 @@
   --ink: #2b2b2b;
   --muted: #6d6d6d;
   --magenta: #FF02B8;
-  --magenta-soft: rgba(255, 2, 184, 0.14);
-  --magenta-highlight: rgba(255, 2, 184, 0.28);
+  --magenta-soft: rgb(253, 159, 227);
   /* horizontal padding shared by the content column + the hero title */
   --pad: clamp(1.5rem, 5vw, 5rem);
   /* the content's inner width = the space the title must fill */
   --content-width: calc(100vw - var(--pad) * 2);
   /* shared text column width for the intro, projects + posts */
   --measure: 640px;
-  --font: 'Akzidenz-Grotesk BQ', 'AkzidenzGrotesk', serif;
+  /* approx rendered height of the hero title — used to offset the content
+     below it (font-size width/9.4 * line-height 0.95 ≈ width/10) */
+  --title-h: calc(var(--content-width) / 10);
+  /* how far the intro's first line tucks up under the hero title */
+  --intro-overlap: 2.5rem;
+  --font: 'Hanken Grotesk', 'HK Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  /* display face for the hero title — Druk Wide lookalike (wide + heavy) */
+  --font-display: 'Druk Wide', 'Archivo', 'Hanken Grotesk', sans-serif;
   /* strong ease-out — more intentional than the built-in curve */
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -64,9 +70,9 @@ body::after {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* reserve space for the fixed title (≈ its rendered height) so content
-     starts below it. font-size / 6.3 * line-height(0.9) ≈ width / 7 */
-  padding-top: calc(var(--content-width) / 7);
+  /* the title is fixed (out of flow); the content reserves its own space
+     for it via padding-top, so nothing is needed here. */
+  padding-top: 0;
 }
 
 /* ---- hero title -------------------------------------------------- */
@@ -84,16 +90,19 @@ body::after {
   z-index: 50;
   pointer-events: none; /* never block clicks/hover on content beneath */
   text-align: center;
-  font-weight: 800;
-  /* size the type so "CRIS MAILLO" (~6.3em wide) exactly fills the content
-     width — shrinks/grows with the viewport. Tweak the 6.3 divisor if the
-     real font sits looser/tighter than the sans-serif fallback. */
-  font-size: calc(var(--content-width) / 6.3);
-  letter-spacing: -0.02em;
-  line-height: 0.9;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-stretch: 125%; /* activate Archivo's expanded width axis */
+  /* size the type so "CRIS MAILLO" exactly fills the content width — shrinks/
+     grows with the viewport. Druk Wide / Archivo Expanded is much wider than a
+     plain grotesque, so the divisor is larger than for a regular sans. Tweak it
+     if the real font sits looser/tighter. */
+  font-size: calc(var(--content-width) / 9.4);
+  letter-spacing: -0.01em;
+  line-height: 0.95;
   /* light-grey source + difference: |bg(#f4f4f3) - #c9c9c9| ≈ #2b2b2b, so it
      reads as dark grey on the light bg while still inverting over text */
-  color: #c9c9c9;
+  color: #d6d2d2;
   mix-blend-mode: difference;
   margin-top: -0.12em;
   white-space: nowrap;
@@ -103,7 +112,9 @@ body::after {
 
 .content {
   flex: 1 0 auto;
-  padding: clamp(2rem, 9vw, 8rem) var(--pad) 6rem;
+  /* top padding reserves the fixed title's height (keeps padding non-zero so
+     the intro's negative margin doesn't collapse through the container) */
+  padding: var(--title-h) var(--pad) 6rem;
 }
 
 .intro {
@@ -112,6 +123,8 @@ body::after {
   line-height: 1.5;
   font-weight: 400;
   text-align: justify;
+  /* pull the first line up so it overlaps the bottom of the hero title */
+  margin-top: calc(var(--intro-overlap) * -1);
 }
 
 /* ---- list sections (Projects / Posts) ---------------------------- */
@@ -130,6 +143,8 @@ body::after {
 .list {
   display: flex;
   flex-direction: column;
+  /* indent the rows slightly from the section heading */
+  padding-left: 1.25rem;
 }
 
 .row {
@@ -170,7 +185,7 @@ body::after {
 }
 
 .row:hover .rowTitle {
-  background: var(--magenta-highlight);
+  background: var(--magenta);
 }
 
 .rowDescription {
@@ -200,9 +215,9 @@ body::after {
   font-weight: 400;
   color: var(--magenta);
   background: var(--magenta-soft);
-  padding: 0.18rem 0.5rem;
+  padding: 0.18rem 0.6rem;
   border-radius: 999px;
-  line-height: 1;
+  line-height: 1.06;
 }
 
 /* ---- footer ------------------------------------------------------ */
@@ -211,6 +226,7 @@ body::after {
   flex-shrink: 0;
   background: var(--magenta);
   color: #111;
+  margin-top: 4rem;
   padding: 1.25rem clamp(1.5rem, 5vw, 5rem) 0.3rem;
   min-height: 110px;
   display: flex;
@@ -395,12 +411,70 @@ body::after {
 /* ------------------------------------------------------------------ */
 
 @media (max-width: 640px) {
-  .postRow {
-    grid-template-columns: 95px 1fr;
+  /* the hero title is short on narrow screens, so the intro's negative
+     overlap would collide with it — drop the overlap and add a little
+     breathing room beneath the title instead */
+  .intro {
+    margin-top: 8rem;
+  }
+
+  /* mobile readability: 16px+ body text, comfortable line-height, and
+     left-aligned (justified text creates ugly word-gap rivers on narrow
+     columns) */
+  .intro,
+  .rowDescription {
+    font-size: 1rem;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .rowYear,
+  .rowDate,
+  .rowTitle,
+  .sectionHeading,
+  .tag {
+    font-size: 1rem;
+  }
+
+  /* flatten rowMain so the title + description become direct grid items,
+     letting the year/date share the title's line and the description span
+     the full row width on its own line below */
+  .projectRow .rowMain,
+  .postRow .rowMain {
+    display: contents;
+  }
+
+  /* Projects: year + title on one line, description full-width beneath */
+  .projectRow {
+    grid-template-columns: auto 1fr;
     grid-template-areas:
-      'date tag'
-      'main main';
-    row-gap: 0.35rem;
+      'year title'
+      'desc desc';
+    column-gap: 0.6rem;
+    row-gap: 0.25rem;
+  }
+
+  .projectRow .rowYear {
+    grid-area: year;
+  }
+
+  .projectRow .rowTitle {
+    grid-area: title;
+  }
+
+  .projectRow .rowDescription {
+    grid-area: desc;
+  }
+
+  /* Posts: date on its own line, then tag + title, description full-width below */
+  .postRow {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      'date date'
+      'tag title'
+      'desc desc';
+    column-gap: 0.6rem;
+    row-gap: 0.4rem;
   }
 
   .postRow .rowDate {
@@ -411,8 +485,23 @@ body::after {
     grid-area: tag;
   }
 
-  .postRow .rowMain {
-    grid-area: main;
+  .postRow .rowTitle {
+    grid-area: title;
+  }
+
+  .postRow .rowDescription {
+    grid-area: desc;
+  }
+
+  /* mobile footer: copyright, ticking time + socials only, full-bleed */
+  .footer {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+
+  .footer .resolution,
+  .footer .os {
+    display: none;
   }
 
   .footerRow {
@@ -420,9 +509,9 @@ body::after {
     gap: 0.75rem 1.5rem;
   }
 
+  /* keep social links stacked in a column */
   .socials {
-    flex-direction: row;
-    gap: 0.75rem;
-    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }

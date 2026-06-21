@@ -42,9 +42,9 @@ function Footer() {
           <br />
           All Rights Reserved.
         </span>
-        <span className="stat">{resolution}</span>
-        <span className="stat">{os}</span>
-        <span className="stat">{time}</span>
+        <span className="stat resolution">{resolution}</span>
+        <span className="stat os">{os}</span>
+        <span className="stat time">{time}</span>
         <nav className="socials">
           <a href="https://www.linkedin.com/in/cristina-maillo/" target="_blank" rel="noopener noreferrer">
             LinkedIn
