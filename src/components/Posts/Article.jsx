@@ -6,6 +6,7 @@ import rehypeRaw from "rehype-raw";
 import articleFiles from './articles/index';
 import { useNavigate } from 'react-router-dom';
 import LoadingBar from '../LoadingBar';
+import Footer from '../Footer';
 import '../../App.css';
 
 const Article = () => {
@@ -33,19 +34,30 @@ const Article = () => {
   if (!articleContent) return <LoadingBar/>;
 
   return (
-    <div>
-        <div className="articleHead">
-            <div className="returnButton">
-                <h5 onClick={() => navigate('/')}>← back</h5>
-            </div>
-            <div className="articleTitle">
-                <h2>{articleContent.title}</h2>
-            </div>
-        </div>
+    <div className="page">
+        <header className="hero">
+            <h1 className="heroTitle">CRIS MAILLO</h1>
+        </header>
 
-        <div className="textContainer article">
-            <div className="articleText"><ReactMarkdown rehypePlugins={[rehypeRaw]}>{articleContent.articleBody}</ReactMarkdown></div>
-        </div>
+        <main className="articleMain">
+            <div className="articleHead">
+                <div className="returnButton">
+                    <h5 onClick={() => navigate('/')}>← back</h5>
+                </div>
+                <div className="articleTitle">
+                    {articleContent.date && (
+                        <span className="articleDate">{articleContent.date}</span>
+                    )}
+                    <h2>{articleContent.title}</h2>
+                </div>
+            </div>
+
+            <div className="textContainer article">
+                <div className="articleText"><ReactMarkdown rehypePlugins={[rehypeRaw]}>{articleContent.articleBody}</ReactMarkdown></div>
+            </div>
+        </main>
+
+        <Footer />
     </div>
   );
 };
