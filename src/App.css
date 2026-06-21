@@ -117,6 +117,50 @@ a {
   margin-top: calc(var(--intro-overlap) * -1);
 }
 
+/* ---- intro hover highlights -------------------------------------- */
+
+.hl {
+  border-radius: 0.2em;
+  padding: 0 0.08em;
+  transition: background-color 0.18s ease, color 0.18s ease;
+  cursor: default;
+}
+
+.hl:hover {
+  color: #fff;
+}
+
+.hl-cris:hover {
+  background-color: #ffd400; /* bright yellow */
+  color: #000;
+}
+
+.hl-ibm:hover {
+  background-color: #0f62fe; /* IBM blue */
+}
+
+.hl-yoga:hover {
+  background-color: #8b3fe0; /* purple */
+}
+
+.hl-synths:hover {
+  background-color: #1ed760; /* techno green */
+  color: #000;
+}
+
+.hl-drink:hover {
+  background-color: #7b182f; /* wine red */
+}
+
+.hl-snack:hover {
+  background-color: #6b7a23; /* olive green */
+}
+
+.hl-sun:hover {
+  background-color: #ff9e1b; /* bright yellow orange */
+  color: #000;
+}
+
 /* ---- list sections (Projects / Posts) ---------------------------- */
 
 .listSection {

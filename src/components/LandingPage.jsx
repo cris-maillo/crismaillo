@@ -108,12 +108,17 @@ function LandingPage() {
 
       <main className="content">
         <p className="intro">
-          Hey I&apos;m Cris. I like to do things. Maybe too many things. I design,
-          I build, I write, I learn. I&apos;m a Data Consultant at IBM interested
-          in BI and Data Consumption. I&apos;ve built yoga.AI, fabrika, and I'm
-          currently building AAA. I like tinkering with hardware, cameras,
-          touchdesigner, synths. I live in London and I love exploring London. I
-          like having a drink and a snack with my friends in terraces in the sun.
+          Hey I&apos;m <span className="hl hl-cris">Cris</span>. I like to do
+          things. Maybe too many things. I design, I build, I write, I learn.
+          I&apos;m a Data Consultant at <span className="hl hl-ibm">IBM</span>{' '}
+          interested in BI and Data Consumption. I&apos;ve built{' '}
+          <span className="hl hl-yoga">yoga.AI</span>, fabrika, and I&apos;m currently
+          building AAA. I like tinkering with hardware, cameras, touchdesigner,{' '}
+          <span className="hl hl-synths">synths</span>. I live in London and I
+          love exploring London. I like having a{' '}
+          <span className="hl hl-drink">drink</span> and a{' '}
+          <span className="hl hl-snack">snack</span> with my friends in terraces
+          in the <span className="hl hl-sun">sun</span>.
           I never know enough and I am always learning.
         </p>
 
