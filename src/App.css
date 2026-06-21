@@ -6,12 +6,19 @@
 :root {
   --bg: #f4f4f3;
   --ink: #2b2b2b;
-  --muted: #a3a3a3;
-  --magenta: #e7209f;
-  --magenta-soft: rgba(231, 32, 159, 0.14);
-  --magenta-highlight: rgba(231, 32, 159, 0.28);
-  --font: 'Akzidenz-Grotesk BQ', 'AkzidenzGrotesk', 'Helvetica Neue', Helvetica,
-    Arial, sans-serif;
+  --muted: #6d6d6d;
+  --magenta: #FF02B8;
+  --magenta-soft: rgba(255, 2, 184, 0.14);
+  --magenta-highlight: rgba(255, 2, 184, 0.28);
+  /* horizontal padding shared by the content column + the hero title */
+  --pad: clamp(1.5rem, 5vw, 5rem);
+  /* the content's inner width = the space the title must fill */
+  --content-width: calc(100vw - var(--pad) * 2);
+  /* shared text column width for the intro, projects + posts */
+  --measure: 640px;
+  --font: 'Akzidenz-Grotesk BQ', 'AkzidenzGrotesk', serif;
+  /* strong ease-out — more intentional than the built-in curve */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 * {
@@ -37,27 +44,57 @@ a {
   text-decoration: none;
 }
 
+/* film-grain / grunge overlay — fixed over every page, ignores pointer events.
+   Tweak `opacity` for grit, `baseFrequency` for grain size. */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.20;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
 /* ---- page shell -------------------------------------------------- */
 
 .page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* reserve space for the fixed title (≈ its rendered height) so content
+     starts below it. font-size / 6.3 * line-height(0.9) ≈ width / 7 */
+  padding-top: calc(var(--content-width) / 7);
 }
 
 /* ---- hero title -------------------------------------------------- */
 
-.hero {
-  overflow: hidden;
-}
-
+/* The title itself is fixed + blended. The blend mode must live on the same
+   element as the positioning so it stays in the ROOT stacking context and
+   blends against the page content beneath it (a wrapper with z-index would
+   isolate it and break the blend). */
 .heroTitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 var(--pad); /* match the content column's left/right edges */
+  z-index: 50;
+  pointer-events: none; /* never block clicks/hover on content beneath */
   text-align: center;
   font-weight: 800;
-  font-size: clamp(4rem, 17.5vw, 14rem);
+  /* size the type so "CRIS MAILLO" (~6.3em wide) exactly fills the content
+     width — shrinks/grows with the viewport. Tweak the 6.3 divisor if the
+     real font sits looser/tighter than the sans-serif fallback. */
+  font-size: calc(var(--content-width) / 6.3);
   letter-spacing: -0.02em;
   line-height: 0.9;
-  color: var(--ink);
+  /* light-grey source + difference: |bg(#f4f4f3) - #c9c9c9| ≈ #2b2b2b, so it
+     reads as dark grey on the light bg while still inverting over text */
+  color: #c9c9c9;
+  mix-blend-mode: difference;
   margin-top: -0.12em;
   white-space: nowrap;
 }
@@ -66,24 +103,26 @@ a {
 
 .content {
   flex: 1 0 auto;
-  padding: clamp(2rem, 9vw, 8rem) clamp(1.5rem, 5vw, 5rem) 6rem;
+  padding: clamp(2rem, 9vw, 8rem) var(--pad) 6rem;
 }
 
 .intro {
-  max-width: 640px;
+  max-width: var(--measure);
   font-size: 1.06rem;
   line-height: 1.5;
   font-weight: 400;
+  text-align: justify;
 }
 
 /* ---- list sections (Projects / Posts) ---------------------------- */
 
 .listSection {
+  max-width: var(--measure);
   margin-top: clamp(2.5rem, 5vw, 4rem);
 }
 
 .sectionHeading {
-  font-size: 1rem;
+  font-size: 1.06rem;
   font-weight: 700;
   margin-bottom: 1.1rem;
 }
@@ -111,8 +150,8 @@ a {
 
 .rowYear,
 .rowDate {
-  font-size: 0.78rem;
-  color: var(--ink);
+  font-size: 1.06rem;
+  color: var(--muted);
   letter-spacing: 0.01em;
 }
 
@@ -123,10 +162,9 @@ a {
 }
 
 .rowTitle {
-  font-size: 0.86rem;
+  font-size: 1.06rem;
   font-weight: 700;
   width: fit-content;
-  padding: 0 2px;
   border-radius: 2px;
   transition: background 0.15s ease;
 }
@@ -136,9 +174,21 @@ a {
 }
 
 .rowDescription {
-  font-size: 0.8rem;
+  font-size: 1.06rem;
   color: var(--muted);
   font-weight: 400;
+  text-align: justify;
+}
+
+.rowDescription a {
+  color: inherit; /* keep the muted description colour, not magenta */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 0.15s ease;
+}
+
+.rowDescription a:hover {
+  opacity: 0.7;
 }
 
 /* tag pill */
@@ -146,9 +196,8 @@ a {
 .tag {
   justify-self: start;
   align-self: baseline;
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: 1.06rem;
+  font-weight: 400;
   color: var(--magenta);
   background: var(--magenta-soft);
   padding: 0.18rem 0.5rem;
@@ -162,7 +211,7 @@ a {
   flex-shrink: 0;
   background: var(--magenta);
   color: #111;
-  padding: 1.25rem clamp(1.5rem, 5vw, 5rem);
+  padding: 1.25rem clamp(1.5rem, 5vw, 5rem) 0.3rem;
   min-height: 110px;
   display: flex;
   align-items: flex-end;
@@ -176,6 +225,7 @@ a {
   gap: 1rem;
   font-size: 0.78rem;
   line-height: 1.35;
+  font-weight: 400;
 }
 
 .copyright {
@@ -215,6 +265,7 @@ a {
   color: var(--muted);
   margin-bottom: 1.5rem;
   width: fit-content;
+  transition: color 0.15s ease;
 }
 
 .returnButton h5:hover {
@@ -289,14 +340,61 @@ a {
 }
 
 /* ------------------------------------------------------------------ */
+/*  Entrance — a quiet staggered fade-up on first load.               */
+/*  Gated behind no-preference so reduced-motion users see content    */
+/*  fully visible and instant (the opacity:0 only applies here).      */
+/* ------------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro,
+  .listSection,
+  .footer {
+    opacity: 0;
+    animation: riseIn 500ms var(--ease-out) forwards;
+  }
+
+  .heroTitle {
+    opacity: 0;
+    /* opacity-only so the difference blend never flickers mid-move */
+    animation: fadeIn 600ms var(--ease-out) forwards;
+  }
+
+  .intro {
+    animation-delay: 80ms;
+  }
+  .listSection:nth-of-type(1) {
+    animation-delay: 160ms;
+  }
+  .listSection:nth-of-type(2) {
+    animation-delay: 220ms;
+  }
+  .footer {
+    animation-delay: 300ms;
+  }
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /*  Responsive                                                        */
 /* ------------------------------------------------------------------ */
 
 @media (max-width: 640px) {
-  .heroTitle {
-    font-size: 18vw;
-  }
-
   .postRow {
     grid-template-columns: 95px 1fr;
     grid-template-areas:

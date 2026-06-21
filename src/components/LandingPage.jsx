@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './../App.css';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
@@ -6,37 +7,55 @@ import Footer from './Footer';
 const projects = [
   {
     year: '2026',
-    title: 'Improving on my AI workflow',
-    description: 'Learning on stuff and doing stuff is stuffy',
+    title: 'fabrika',
+    description: 'Automated synthetic data generation at scale. Upload Mermaid.js diagrams, data dictionaries, sample data, or use AI to generate realistic synthetic data for testing, development, and prototyping.',
+    link: 'https://fabrika-live.vercel.app/',
   },
   {
-    year: '2026',
-    title: 'Improving on my AI workflow',
-    description: 'Learning on stuff and doing stuff is stuffy',
+    year: '2020',
+    title: 'YogAI',
+    description: 'I created <a href="https://cris-maillo.github.io/yogAI/" target="_blank" rel="noopener noreferrer">yogAI</a> inspired by various Machine Learning models for visual recognition I experimented with during my internship. YogAI is built using <a href="https://www.tensorflow.org/lite/models/pose_estimation/overview" target="_blank" rel="noopener noreferrer">Pose.Net</a>, developed by TensorFlow, and <a href="https://ml5js.org/" target="_blank" rel="noopener noreferrer">ml5.js</a>.',
+    link: 'https://youtu.be/mW6Z9TIqNUQ'
   },
 ];
 
 // ✏️ Edit your posts here. Add an `id` to link to an /article/:id page.
 const posts = [
   {
-    date: '12 - 07 - 2026',
-    tag: 'DATA',
+    date: '20 06 2026',
+    tag: 'AI',
     title: 'Improving on my AI workflow',
-    description: 'Learning on stuff and doing stuff is stuffy',
-  },
-  {
-    date: '12 - 07 - 2026',
-    tag: 'DATA',
-    title: 'Improving on my AI workflow',
-    description: 'Learning on stuff and doing stuff is stuffy',
-  },
-  {
-    date: '12 - 07 - 2026',
-    tag: 'DATA',
-    title: 'Improving on my AI workflow',
-    description: 'Learning on stuff and doing stuff is stuffy',
-  },
+    description: 'Live tweeting learning how to take my AI workflow to the next level.',
+    link: 'https://x.com/cris_maillo/status/2068289056308380055',
+  }
 ];
+
+function ProjectRow({ project }) {
+  return (
+    <div className="row projectRow">
+      <span className="rowYear">{project.year}</span>
+      <span className="rowMain">
+        {project.link ? (
+          <a
+            className="rowTitle"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {project.title}
+          </a>
+        ) : (
+          <span className="rowTitle">{project.title}</span>
+        )}
+        {/* description may contain inline <a> links, so render it as HTML */}
+        <span
+          className="rowDescription"
+          dangerouslySetInnerHTML={{ __html: project.description }}
+        />
+      </span>
+    </div>
+  );
+}
 
 function PostRow({ post }) {
   const body = (
@@ -50,13 +69,28 @@ function PostRow({ post }) {
     </>
   );
 
-  return post.id ? (
-    <Link to={`/article/${post.id}`} className="row postRow">
-      {body}
-    </Link>
-  ) : (
-    <div className="row postRow">{body}</div>
-  );
+  if (post.id) {
+    return (
+      <Link to={`/article/${post.id}`} className="row postRow">
+        {body}
+      </Link>
+    );
+  }
+
+  if (post.link) {
+    return (
+      <a
+        className="row postRow"
+        href={post.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {body}
+      </a>
+    );
+  }
+
+  return <div className="row postRow">{body}</div>;
 }
 
 function LandingPage() {
@@ -81,13 +115,7 @@ function LandingPage() {
           <h2 className="sectionHeading">Projects</h2>
           <div className="list">
             {projects.map((project, index) => (
-              <div className="row projectRow" key={index}>
-                <span className="rowYear">{project.year}</span>
-                <span className="rowMain">
-                  <span className="rowTitle">{project.title}</span>
-                  <span className="rowDescription">{project.description}</span>
-                </span>
-              </div>
+              <ProjectRow project={project} key={index} />
             ))}
           </div>
         </section>

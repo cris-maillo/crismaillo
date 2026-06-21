@@ -49,13 +49,13 @@ function Footer() {
           <a href="https://www.linkedin.com/in/cristina-maillo/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a href="https://github.com/cris-maillo/crismaillo" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/cris-maillo/" target="_blank" rel="noopener noreferrer">
             Github
           </a>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/cris_maillo" target="_blank" rel="noopener noreferrer">
             Twitter
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/cris.maillo/" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
         </nav>
