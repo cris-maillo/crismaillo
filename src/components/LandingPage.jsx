@@ -107,7 +107,14 @@ function LandingPage() {
       </header>
 
       <main className="content">
-        <p className="intro">
+        <p
+          className="intro"
+          onMouseOver={(e) => {
+            if (e.target.classList.contains('hl')) {
+              e.target.classList.add('hl-on');
+            }
+          }}
+        >
           Hey I&apos;m <span className="hl hl-cris">Cris</span>. I like to do
           things. Maybe too many things. I design, I build, I write, I learn.
           I&apos;m a Data Consultant at <span className="hl hl-ibm">IBM</span>{' '}

@@ -126,37 +126,45 @@ a {
   cursor: default;
 }
 
-.hl:hover {
+.hl:hover,
+.hl.hl-on {
   color: #fff;
 }
 
-.hl-cris:hover {
+.hl-cris:hover,
+.hl-cris.hl-on {
   background-color: #ffd400; /* bright yellow */
   color: #000;
 }
 
-.hl-ibm:hover {
+.hl-ibm:hover,
+.hl-ibm.hl-on {
   background-color: #0f62fe; /* IBM blue */
 }
 
-.hl-yoga:hover {
+.hl-yoga:hover,
+.hl-yoga.hl-on {
   background-color: #8b3fe0; /* purple */
 }
 
-.hl-synths:hover {
+.hl-synths:hover,
+.hl-synths.hl-on {
   background-color: #1ed760; /* techno green */
   color: #000;
 }
 
-.hl-drink:hover {
+.hl-drink:hover,
+.hl-drink.hl-on {
   background-color: #7b182f; /* wine red */
 }
 
-.hl-snack:hover {
+.hl-snack:hover,
+.hl-snack.hl-on {
   background-color: #6b7a23; /* olive green */
 }
 
-.hl-sun:hover {
+.hl-sun:hover,
+.hl-sun.hl-on {
   background-color: #ff9e1b; /* bright yellow orange */
   color: #000;
 }
