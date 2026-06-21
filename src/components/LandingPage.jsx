@@ -112,7 +112,7 @@ function LandingPage() {
           things. Maybe too many things. I design, I build, I write, I learn.
           I&apos;m a Data Consultant at <span className="hl hl-ibm">IBM</span>{' '}
           interested in BI and Data Consumption. I&apos;ve built{' '}
-          <span className="hl hl-yoga">yoga.AI</span>, fabrika, and I&apos;m currently
+          <span className="hl hl-yoga">yogAI</span>, fabrika, and I&apos;m currently
           building AAA. I like tinkering with hardware, cameras, touchdesigner,{' '}
           <span className="hl hl-synths">synths</span>. I live in London and I
           love exploring London. I like having a{' '}
