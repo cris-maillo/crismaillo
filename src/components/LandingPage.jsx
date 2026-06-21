@@ -1,75 +1,109 @@
-/* eslint-disable */
 import './../App.css';
-import React, { useEffect, useState } from 'react';
-import Tippy from '@tippyjs/react';
 import { Link } from 'react-router-dom';
-import technologists from '../assets/images/technologists.jpeg';
-import digGarden from '../assets/images/digGarden.gif';
-import dream from '../assets/images/dream.jpeg';
-import Monsterra from './Monsterra';
+import Footer from './Footer';
+
+// ✏️ Edit your projects here
+const projects = [
+  {
+    year: '2026',
+    title: 'Improving on my AI workflow',
+    description: 'Learning on stuff and doing stuff is stuffy',
+  },
+  {
+    year: '2026',
+    title: 'Improving on my AI workflow',
+    description: 'Learning on stuff and doing stuff is stuffy',
+  },
+];
+
+// ✏️ Edit your posts here. Add an `id` to link to an /article/:id page.
+const posts = [
+  {
+    date: '12 - 07 - 2026',
+    tag: 'DATA',
+    title: 'Improving on my AI workflow',
+    description: 'Learning on stuff and doing stuff is stuffy',
+  },
+  {
+    date: '12 - 07 - 2026',
+    tag: 'DATA',
+    title: 'Improving on my AI workflow',
+    description: 'Learning on stuff and doing stuff is stuffy',
+  },
+  {
+    date: '12 - 07 - 2026',
+    tag: 'DATA',
+    title: 'Improving on my AI workflow',
+    description: 'Learning on stuff and doing stuff is stuffy',
+  },
+];
+
+function PostRow({ post }) {
+  const body = (
+    <>
+      <span className="rowDate">{post.date}</span>
+      <span className="tag">{post.tag}</span>
+      <span className="rowMain">
+        <span className="rowTitle">{post.title}</span>
+        <span className="rowDescription">{post.description}</span>
+      </span>
+    </>
+  );
+
+  return post.id ? (
+    <Link to={`/article/${post.id}`} className="row postRow">
+      {body}
+    </Link>
+  ) : (
+    <div className="row postRow">{body}</div>
+  );
+}
 
 function LandingPage() {
-  const [lastUpdated, setLastUpdated] = useState(null);
-
-  useEffect(() => {
-    const fetchLastCommitDate = async () => {
-      try {
-        const response = await fetch(
-          'https://api.github.com/repos/cris-maillo/crismaillo/commits/main'
-        );
-        const data = await response.json();
-        const commitDate = new Date(data.commit.committer.date);
-        const options = {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        };
-        setLastUpdated(commitDate.toLocaleDateString("en-GB", options));
-      } catch (error) {
-        console.error('Error fetching last commit date:', error);
-      }
-    };
-
-    fetchLastCommitDate();
-  }, []);
-
   return (
-    <>
-    <div className="intro">
-      <h3>welcome,</h3>
-      <h4>
-        this is my very own personal space on the{" "}
-        <span className="image-wrapper textHover">
-          <img className="image" src={technologists} alt="girls on lappy" />
-          <span>internet</span>
-        </span>. 
-        An experimental &amp; <Tippy content={"last update: " + (lastUpdated || '29 September 2024')} className='tippy'><span className='textHover'>ever-changing</span></Tippy> (verging on self-absorbed) space to share{" "}
-        <Link to="/about">who I am</Link>,{" "}  
-        <Link to="/projects">what I've done</Link>, 
-        what I’m doing now,{" "}
-        <Link to="/toolbox">what I like</Link>, 
-        and <Link to="/film">what I capture</Link>. 
-        Inspired by the slow web and various{" "}
-        <span className="image-wrapper textHover">
-          <img className="image" src={digGarden} alt="gif of why garden" />
-          <span>digital gardens</span>
-        </span>
-        , this is my formal{" "}
-        <span className="image-wrapper textHover">
-          <span>
-            introduction into the internet</span>
-            <img className="image" src={dream} alt="wanting to be a computer" />
-        </span>, 
-        through self-taught lines of code, multiple figma drafts, and lots of good vibes.
-      </h4>
-      <h4 style={{zIndex: 0}}>
-        In other words, <b>nice to meet you.</b>
-      </h4>
+    <div className="page">
+      <header className="hero">
+        <h1 className="heroTitle">CRIS MAILLO</h1>
+      </header>
+
+      <main className="content">
+        <p className="intro">
+          Hey I&apos;m Cris. I like to do things. Maybe too many things. I design,
+          I build, I write, I learn. I&apos;m a Data Consultant at IBM interested
+          in BI and Data Consumption. I&apos;ve built yoga.AI, fabrika, and
+          currently building AAA. I like tinkering with hardware, cameras,
+          touchdesigner, synths. I live in London and I love exploring London. I
+          like having a drink and a snack with my friends in terraces in the sun.
+          I never know enough and I am always learning.
+        </p>
+
+        <section className="listSection">
+          <h2 className="sectionHeading">Projects</h2>
+          <div className="list">
+            {projects.map((project, index) => (
+              <div className="row projectRow" key={index}>
+                <span className="rowYear">{project.year}</span>
+                <span className="rowMain">
+                  <span className="rowTitle">{project.title}</span>
+                  <span className="rowDescription">{project.description}</span>
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="listSection">
+          <h2 className="sectionHeading">Posts</h2>
+          <div className="list">
+            {posts.map((post, index) => (
+              <PostRow post={post} key={index} />
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <Footer />
     </div>
-    <div className='monsterra'>
-      <Monsterra/>
-    </div>
-    </>
   );
 }
 
