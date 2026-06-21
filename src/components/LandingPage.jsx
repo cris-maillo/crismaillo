@@ -104,7 +104,6 @@ function LandingPage() {
     <div className="page">
       <header className="hero">
         <h1 className="heroTitle">CRIS MAILLO</h1>
-        <div className="heroBox"/>
       </header>
 
       <main className="content">
