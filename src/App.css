@@ -473,6 +473,7 @@ a {
     padding-left: 0;
     padding-right: 0;
     font-size: calc(100vw / 10);
+    top: 20px;
   }
 
   /* match the reserved title height to the larger full-bleed title */
