@@ -33,13 +33,13 @@
   padding: 0;
 }
 
-/* magenta backstop so any overscroll past the footer shows pink, not white */
-html {
-  background: var(--magenta);
-}
-
+/* magenta backstop so any overscroll (top OR bottom) shows pink, not white.
+   On iOS the bottom rubber-band is painted from the BODY background while the
+   top uses HTML, so both must be magenta. The light page colour lives on the
+   .page wrapper instead, which the content paints over. */
+html,
 body {
-  background: var(--bg);
+  background: var(--magenta);
 }
 
 body {
@@ -57,6 +57,7 @@ a {
 /* ---- page shell -------------------------------------------------- */
 
 .page {
+  background: var(--bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
